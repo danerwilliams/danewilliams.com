@@ -1,3 +1,5 @@
+const { slate: lightmode, slateDark: darkmode } = require('@radix-ui/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      lightmode,
+      darkmode,
+    },
   },
   plugins: [],
 };
