@@ -8,11 +8,9 @@ interface LayoutProps {
 
 export const Layout: FC<Readonly<LayoutProps>> = ({ children }) => {
   return (
-    <div className="flex flex-col items-center bg-lightmode-slate1 dark:bg-darkmode-slate1">
+    <div className="flex flex-col min-h-screen items-center bg-lightmode-slate1 dark:bg-darkmode-slate1">
       <Navbar />
-      <div className="min-h-screen">
-        <main>{children}</main>
-      </div>
+      <main className="grow">{children}</main>
       <Footer />
     </div>
   );
