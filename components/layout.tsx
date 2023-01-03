@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export const Layout: FC<Readonly<LayoutProps>> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen items-center bg-lightmode-slate1 dark:bg-darkmode-slate1">
+    <div className="flex flex-col min-h-screen items-center bg-lightmode-background dark:bg-darkmode-background text-lightmode-text dark:text-darkmode-text">
       <Navbar />
       <main className="grow">{children}</main>
     </div>

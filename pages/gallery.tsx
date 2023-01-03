@@ -4,6 +4,9 @@ const Gallery: NextPage = () => {
   return (
     <>
       <h1 className="text-3xl font-bold underline">Gallery</h1>
+      <div className="bg-lightmode-component dark:bg-darkmode-component">
+        testing 123
+      </div>
       <a>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever
