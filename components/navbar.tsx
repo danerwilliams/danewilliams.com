@@ -3,7 +3,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { PlusIcon, SunIcon, FaceIcon } from '@radix-ui/react-icons';
+import { PlusIcon, SunIcon, FaceIcon, MoonIcon } from '@radix-ui/react-icons';
 import { useRouter } from 'next/router';
 
 const pages = ['about', 'journal', 'projects', 'gallery'];
@@ -113,6 +113,9 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
                   </a>
                 </Link>
               ))}
+              <DropdownMenu.Item className="mt-4 flex items-center justify-end">
+                <MoonIcon className="h-10 w-10" />
+              </DropdownMenu.Item>
             </DropdownMenu.Content>
           </DropdownMenu.Root>
         </div>
