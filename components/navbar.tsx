@@ -11,7 +11,7 @@ const pages = ['about', 'journal', 'projects', 'gallery'];
 
 export const Navbar: FC<Readonly<NavbarProps>> = () => {
   return (
-    <div className="flex flex-col w-full text-lightmode-slate11 dark:text-darkmode-slate11">
+    <div className="flex flex-col w-full">
       <div className="hidden md:block">
         <DesktopNavBar />
       </div>
@@ -89,7 +89,7 @@ const MobileNavDrawer = () => {
               </button>
             </DropdownMenu.Trigger>
 
-            <DropdownMenu.Content className="text-lightmode-slate11 text-right text-3xl mr-6 mt-6">
+            <DropdownMenu.Content className="text-right text-3xl mr-6 mt-6">
               {pages.map((page) => (
                 <Link href={`/${page}`} key={page}>
                   <a onClick={() => setIsOpen}>
