@@ -3,29 +3,35 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { PlusIcon, SunIcon, FaceIcon } from '@radix-ui/react-icons';
-
-interface NavbarProps {}
+import { PlusIcon, SunIcon, FaceIcon, MoonIcon } from '@radix-ui/react-icons';
+import { useRouter } from 'next/router';
 
 const pages = ['about', 'journal', 'projects', 'gallery'];
 
+interface NavbarProps {}
+
 export const Navbar: FC<Readonly<NavbarProps>> = () => {
+  const { pathname } = useRouter();
+  const currentPage = pathname.split('/')[1];
+
   return (
     <div className="flex flex-col w-full">
       <div className="hidden md:block">
-        <DesktopNavBar />
+        <DesktopNavBar currentPage={currentPage} />
       </div>
 
       <div className="md:hidden">
-        <MobileNavDrawer />
+        <MobileNavDrawer currentPage={currentPage} />
       </div>
     </div>
   );
 };
 
-const DesktopNavBar = () => {
-  const [hovered, setHovered] = useState<string | undefined>();
+interface DesktopNavBarProps {
+  currentPage: string;
+}
 
+const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
   return (
     <div className="flex items-center justify-between mt-4">
       <Link href="/">
@@ -37,26 +43,22 @@ const DesktopNavBar = () => {
       <div className="flex flex-col">
         <NavigationMenu.Root>
           <NavigationMenu.List className="flex gap-28">
-            {pages.map((page) => {
-              const isHovered = hovered === page;
-
-              return (
-                <motion.div
-                  onHoverStart={() => setHovered(page)}
-                  onHoverEnd={() => setHovered(undefined)}
-                  animate={{ y: isHovered ? -4 : 0 }}
-                  key={page}
-                >
-                  <Link href={`/${page}`}>
-                    <a>
-                      <NavigationMenu.Item className="py-2 px-2">
-                        {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
-                      </NavigationMenu.Item>
-                    </a>
-                  </Link>
-                </motion.div>
-              );
-            })}
+            {pages.map((page) => (
+              <Link href={`/${page}`} key={page}>
+                <a>
+                  <NavigationMenu.Item
+                    className={`py-2 px-2 hover:text-lightmode-text-high-contrast 
+                    hover:dark:text-darkmode-text-high-contrast transition duration-300 ${
+                      currentPage === page
+                        ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
+                        : 'text-lightmode-text dark:text-darkmode-text'
+                    }`}
+                  >
+                    {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
+                  </NavigationMenu.Item>
+                </a>
+              </Link>
+            ))}
           </NavigationMenu.List>
         </NavigationMenu.Root>
       </div>
@@ -65,7 +67,13 @@ const DesktopNavBar = () => {
   );
 };
 
-const MobileNavDrawer = () => {
+interface MobileNavDrawerProps {
+  currentPage: string;
+}
+
+const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
+  currentPage,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -89,16 +97,25 @@ const MobileNavDrawer = () => {
               </button>
             </DropdownMenu.Trigger>
 
-            <DropdownMenu.Content className="text-right text-3xl mr-6 mt-6">
+            <DropdownMenu.Content className="text-right text-4xl mr-6 mt-6">
               {pages.map((page) => (
                 <Link href={`/${page}`} key={page}>
                   <a onClick={() => setIsOpen}>
-                    <DropdownMenu.Item className="mt-4">
+                    <DropdownMenu.Item
+                      className={`mt-4 ${
+                        currentPage === page
+                          ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
+                          : 'text-lightmode-text dark:text-darkmode-text'
+                      }`}
+                    >
                       {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
                     </DropdownMenu.Item>
                   </a>
                 </Link>
               ))}
+              <DropdownMenu.Item className="mt-4 flex items-center justify-end">
+                <MoonIcon className="h-10 w-10" />
+              </DropdownMenu.Item>
             </DropdownMenu.Content>
           </DropdownMenu.Root>
         </div>
