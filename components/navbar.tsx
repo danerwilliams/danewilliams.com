@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PlusIcon, SunIcon, FaceIcon, MoonIcon } from '@radix-ui/react-icons';
 import { useRouter } from 'next/router';
+import { ThemeToggle } from './theme-toggle';
 
 const pages = ['about', 'journal', 'projects', 'gallery'];
 
@@ -62,7 +63,9 @@ const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
           </NavigationMenu.List>
         </NavigationMenu.Root>
       </div>
-      <SunIcon className="h-6 w-6 mr-6" />
+      <div className="flex items-center mr-6">
+        <ThemeToggle height={6} width={6} />
+      </div>
     </div>
   );
 };
@@ -114,7 +117,7 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
                 </Link>
               ))}
               <DropdownMenu.Item className="mt-4 flex items-center justify-end">
-                <MoonIcon className="h-10 w-10" />
+                <ThemeToggle height={10} width={10} />
               </DropdownMenu.Item>
             </DropdownMenu.Content>
           </DropdownMenu.Root>
