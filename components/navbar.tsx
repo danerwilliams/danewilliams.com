@@ -16,7 +16,7 @@ export const Navbar: FC<Readonly<NavbarProps>> = () => {
   const currentPage = pathname.split('/')[1];
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full font-heading">
       <div className="hidden md:block">
         <DesktopNavBar currentPage={currentPage} />
       </div>
@@ -34,7 +34,7 @@ interface DesktopNavBarProps {
 
 const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
   return (
-    <div className="flex font-heading items-center justify-between mt-4">
+    <div className="flex items-center justify-between mt-4">
       <Link href="/">
         <a>
           <FaceIcon className="w-6 h-6 ml-6" />
