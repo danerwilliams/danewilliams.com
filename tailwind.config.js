@@ -1,4 +1,5 @@
 const { slate, slateDark } = require('@radix-ui/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,7 +9,13 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Fira\\ Sans', ...defaultTheme.fontFamily.sans],
+        mono: ['JetBrains\\ Mono', ...defaultTheme.fontFamily.mono],
+        heading: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
