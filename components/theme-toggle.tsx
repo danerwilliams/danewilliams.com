@@ -31,7 +31,7 @@ export const ThemeToggle: FC<Readonly<ThemeToggleProps>> = ({
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
-  const iconClassName = `h-${height} w-${width} hover:dark:text-darkmode-text-high-contrast hover:text-lightmode-text-high-contrast transition duration-300`;
+  const iconClassName = `h-${height} w-${width} hover:dark:text-darkmode-text-high-contrast hover:text-lightmode-text-high-contrast transition duration-200`;
 
   return (
     <>
