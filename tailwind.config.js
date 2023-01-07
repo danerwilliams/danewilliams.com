@@ -1,4 +1,11 @@
-const { slate, slateDark } = require('@radix-ui/colors');
+const {
+  violet,
+  tealDark,
+  blue,
+  blueDark,
+  slate,
+  slateDark,
+} = require('@radix-ui/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
@@ -15,10 +22,47 @@ module.exports = {
         mono: ['JetBrains\\ Mono', ...defaultTheme.fontFamily.mono],
         heading: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+        thin: '320px',
+      },
+      keyframes: {
+        test: {
+          '100%': {
+            'background-position': '200% center',
+          },
+        },
+        gradient: {
+          '0%': {
+            'background-size': '200% 200%',
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': '100% 50%',
+          },
+          '100%': {
+            'background-size': '200% 200%',
+            'background-position': '0% 50%',
+          },
+        },
+      },
+      animation: {
+        gradient: 'test 12s ease infinite',
+      },
     },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      gradient: {
+        darkmode: {
+          from: blueDark.blue9,
+          to: tealDark.teal9,
+        },
+        lightmode: {
+          from: blue.blue9,
+          to: violet.violet9,
+        },
+      },
       lightmode: {
         'background': slate.slate1,
         'component': slate.slate3,
