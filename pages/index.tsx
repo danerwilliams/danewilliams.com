@@ -1,7 +1,12 @@
 import type { NextPage } from 'next';
+import { Title } from '../components/title';
 
 const Home: NextPage = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="self-center">
+      <Title />
+    </div>
+  );
 };
 
 export default Home;

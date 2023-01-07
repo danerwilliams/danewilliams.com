@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import { Footer } from './footer';
 import { Navbar } from './navbar';
 
 interface LayoutProps {
@@ -9,7 +10,8 @@ export const Layout: FC<Readonly<LayoutProps>> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen items-center bg-lightmode-background dark:bg-darkmode-background text-lightmode-text dark:text-darkmode-text">
       <Navbar />
-      <main className="grow">{children}</main>
+      <main className="flex grow mx-8">{children}</main>
+      <Footer />
     </div>
   );
 };
