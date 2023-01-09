@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { PlusIcon, FaceIcon } from '@radix-ui/react-icons';
 import { useRouter } from 'next/router';
 import { ThemeToggle } from './theme-toggle';
+import { DaneIcon } from './icons/dane-icon';
 
 const pages = ['about', 'journal', 'projects', 'gallery'];
 
@@ -37,7 +38,7 @@ const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
     <div className="flex font-heading items-center justify-between mt-4">
       <Link href="/">
         <a>
-          <FaceIcon className="w-6 h-6 ml-6" />
+          <DaneIcon className="w-6 h-6 ml-6 text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200" />
         </a>
       </Link>
 
