@@ -87,7 +87,7 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
         <div>
           <Link href="/">
             <a>
-              <FaceIcon className="w-8 h-8 ml-6" />
+              <DaneIcon className="w-8 h-8 ml-6" />
             </a>
           </Link>
         </div>
