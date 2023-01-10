@@ -37,9 +37,7 @@ const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
   return (
     <div className="flex font-heading items-center justify-between mt-4">
       <Link href="/">
-        <a>
-          <DaneIcon className="w-6 h-6 ml-6 text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200" />
-        </a>
+        <DaneIcon className="w-6 h-6 ml-6 text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200" />
       </Link>
 
       <div className="flex flex-col">
@@ -47,18 +45,16 @@ const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
           <NavigationMenu.List className="flex gap-32 max-lg:gap-24">
             {pages.map((page) => (
               <Link href={`/${page}`} key={page}>
-                <a>
-                  <NavigationMenu.Item
-                    className={`py-2 px-2 hover:text-lightmode-text-high-contrast 
+                <NavigationMenu.Item
+                  className={`py-2 px-2 hover:text-lightmode-text-high-contrast 
                     hover:dark:text-darkmode-text-high-contrast transition duration-200 ${
                       currentPage === page
                         ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
                         : 'text-lightmode-text dark:text-darkmode-text'
                     }`}
-                  >
-                    {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
-                  </NavigationMenu.Item>
-                </a>
+                >
+                  {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
+                </NavigationMenu.Item>
               </Link>
             ))}
           </NavigationMenu.List>
@@ -86,9 +82,7 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
       <div className="flex items-center justify-between mt-4 ">
         <div>
           <Link href="/">
-            <a>
-              <DaneIcon className="w-8 h-8 ml-6" />
-            </a>
+            <DaneIcon className="w-8 h-8 ml-6" />
           </Link>
         </div>
         <div className="relative z-1">
@@ -103,18 +97,16 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
 
             <DropdownMenu.Content className="text-right text-4xl mr-6 mt-6">
               {pages.map((page) => (
-                <Link href={`/${page}`} key={page}>
-                  <a onClick={() => setIsOpen}>
-                    <DropdownMenu.Item
-                      className={`mt-4 ${
-                        currentPage === page
-                          ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
-                          : 'text-lightmode-text dark:text-darkmode-text'
-                      }`}
-                    >
-                      {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
-                    </DropdownMenu.Item>
-                  </a>
+                <Link href={`/${page}`} key={page} onClick={() => setIsOpen}>
+                  <DropdownMenu.Item
+                    className={`mt-4 ${
+                      currentPage === page
+                        ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
+                        : 'text-lightmode-text dark:text-darkmode-text'
+                    }`}
+                  >
+                    {`${page.charAt(0).toUpperCase()}${page.slice(1)}`}
+                  </DropdownMenu.Item>
                 </Link>
               ))}
               <DropdownMenu.Item className="mt-4 flex items-center justify-end">
