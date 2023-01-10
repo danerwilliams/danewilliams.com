@@ -42,11 +42,11 @@ const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
 
       <div className="flex flex-col">
         <NavigationMenu.Root>
-          <NavigationMenu.List className="flex gap-32 max-lg:gap-24">
+          <NavigationMenu.List className="flex gap-40 max-lg:gap-24">
             {pages.map((page) => (
               <Link href={`/${page}`} key={page}>
                 <NavigationMenu.Item
-                  className={`py-2 px-2 hover:text-lightmode-text-high-contrast 
+                  className={`p-2 hover:text-lightmode-text-high-contrast 
                     hover:dark:text-darkmode-text-high-contrast transition duration-200 ${
                       currentPage === page
                         ? 'text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast'
