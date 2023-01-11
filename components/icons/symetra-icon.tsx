@@ -7,7 +7,10 @@ interface SymetraIconProps {
 export const SymetraIcon: FC<Readonly<SymetraIconProps>> = ({ className }) => (
   <svg
     className={className}
+    height="100%"
+    width="100%"
     viewBox="0 0 280 160"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
