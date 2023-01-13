@@ -20,10 +20,10 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
   endDate,
 }) => (
   <div className="flex grow items-center mt-4">
-    <div className="flex items-center h-16 w-16 lg:h-24 lg:w-24 text-lightmode-logo dark:text-darkmode-logo">
+    <div className="flex items-center h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 text-lightmode-logo dark:text-darkmode-logo">
       {logo}
     </div>
-    <div className="ml-4 md:ml-8 lg:ml-12 text-sm md:text-lg lg:text-xl">
+    <div className="ml-4 md:ml-8 text-sm md:text-base lg:text-lg ">
       <div className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
         <a
           className="underline underline-offset-4 decoration-2 font-medium"
