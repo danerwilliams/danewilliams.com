@@ -11,8 +11,6 @@ import { PreviousCities } from '../components/previous-cities';
 import { ResumeItem, ResumeItemProps } from '../components/resume-item';
 import { SectionHeader } from '../components/section-header';
 
-const titleQuestion = 'Who am I?';
-
 const resumeItems: ResumeItemProps[] = [
   {
     company: 'WorkOS',
@@ -54,9 +52,9 @@ const resumeItems: ResumeItemProps[] = [
 const About: NextPage = () => {
   return (
     <Page>
-      <PageHeader question={titleQuestion} />
+      <PageHeader question="Who am I?" />
       <div className="mt-8">
-        <div className="inline mt-8">
+        <div className="inline">
           <Image
             height={320}
             width={320}
