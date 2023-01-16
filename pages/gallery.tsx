@@ -15,7 +15,7 @@ const gridGalleryImages: GridGalleryImage[] = [
     src: '/gallery/AlumniTourney.png',
     height: 100,
     width: 200,
-    caption: 'sdlfkjsdlkfjdfslkj',
+    caption: 'sdlfk',
   },
   {
     src: '/gallery/AmazonSpheres.png',
