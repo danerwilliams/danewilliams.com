@@ -16,17 +16,18 @@
     "@radix-ui/react-navigation-menu": "1.1.1",
     "@radix-ui/react-switch": "1.0.1",
     "framer-motion": "7.7.2",
+    "fslightbox-react": "1.6.2-2",
     "next": "13.1.1",
     "next-themes": "0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-responsive-masonry": "2.1.7"
+    "react-grid-gallery": "1.0.0"
   },
   "devDependencies": {
+    "@types/fslightbox-react": "1.4.2",
     "@types/node": "18.7.11",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "@types/react-responsive-masonry": "2.1.0",
     "autoprefixer": "10.4.13",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
