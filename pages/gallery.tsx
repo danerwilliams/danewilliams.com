@@ -1,65 +1,17 @@
 import type { NextPage } from 'next';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
-import {
-  Gallery as GridGallery,
-  Image as GridGalleryImage,
-  ThumbnailImageProps,
-} from 'react-grid-gallery';
 import { GalleryImage } from '../components/gallery-image';
-import { useEffect, useState } from 'react';
+import { createRef, useLayoutEffect, useRef, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
+import { GalleryImages } from '../content/gallery/images';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-const gridGalleryImages: GridGalleryImage[] = [
-  {
-    src: '/gallery/AlumniTourney.png',
-    height: 100,
-    width: 200,
-    caption: 'sdlfk',
-  },
-  {
-    src: '/gallery/AmazonSpheres.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-  {
-    src: '/gallery/BernBear.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-  {
-    src: '/gallery/CentralPark.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-  {
-    src: '/gallery/CinqueTerreBaggies.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-  {
-    src: '/gallery/CodersGrad.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-  {
-    src: '/gallery/CompoundRoof.png',
-    height: 300,
-    width: 300,
-    caption: '',
-  },
-];
+const GALLERY_MARGIN = 8;
 
 const Gallery: NextPage = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [currentLightboxSlide, setCurrentLightboxSlide] = useState(1);
-
-  console.log({ currentLightboxSlide, isLightboxOpen });
 
   return (
     <Page>
@@ -72,21 +24,24 @@ const Gallery: NextPage = () => {
         </p>
       </div>
       <div className="mt-8 ">
-        <GridGallery
-          images={gridGalleryImages}
-          thumbnailImageComponent={GalleryImage}
-          enableImageSelection={false}
-          margin={6}
-          onClick={(slide: number, _image) => {
-            setCurrentLightboxSlide(slide + 1);
-            setIsLightboxOpen(!isLightboxOpen);
-          }}
-        />
+        <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 480: 2, 1023: 3 }}>
+          <Masonry gutter={`${GALLERY_MARGIN}px`}>
+            {GalleryImages.map((galleryImageProps, idx) => (
+              <GalleryImage
+                key={`Gallery Image ${idx}`}
+                onClick={() => {
+                  setIsLightboxOpen(!isLightboxOpen);
+                  setCurrentLightboxSlide(idx + 1);
+                }}
+                {...galleryImageProps}
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
         <FsLightbox
           toggler={isLightboxOpen}
-          sources={gridGalleryImages.map((image) => image.src)}
+          sources={GalleryImages.map((image) => image.src)}
           slide={currentLightboxSlide}
-          // onClose={() => setIsLightboxOpen()}
         />
       </div>
     </Page>
