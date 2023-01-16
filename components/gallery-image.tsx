@@ -4,6 +4,7 @@ export interface GalleryImageProps {
   src: string;
   height: number;
   caption: string;
+  priority?: boolean;
   onClick: () => void;
 }
 
@@ -11,6 +12,7 @@ export const GalleryImage = ({
   src,
   height,
   caption,
+  priority,
   onClick,
 }: GalleryImageProps) => {
   return (
@@ -28,6 +30,7 @@ export const GalleryImage = ({
         fill
         className="object-cover"
         sizes="370px"
+        priority={priority}
         quality={50}
       />
     </div>

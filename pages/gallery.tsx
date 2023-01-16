@@ -33,6 +33,7 @@ const Gallery: NextPage = () => {
                   setIsLightboxOpen(!isLightboxOpen);
                   setCurrentLightboxSlide(idx + 1);
                 }}
+                priority={idx < 5}
                 {...galleryImageProps}
               />
             ))}
