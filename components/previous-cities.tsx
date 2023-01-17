@@ -21,7 +21,6 @@ export const PreviousCities: FC<Readonly<PreviousCitiesProps>> = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log({ currentCityIndex });
       rotateCity();
     }, 8000);
 
