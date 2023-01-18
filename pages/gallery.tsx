@@ -21,7 +21,7 @@ const Gallery: NextPage = () => {
           justo.
         </p>
       </div>
-      <div className="mt-8 ">
+      <div className="mt-8">
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 480: 2, 1023: 3 }}>
           <Masonry gutter={`16px`}>
             {GalleryImages.map((galleryImageProps, idx) => (
