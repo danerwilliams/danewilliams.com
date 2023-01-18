@@ -78,19 +78,21 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
 
   return (
     <>
-      {isOpen && <div className="absolute w-screen h-screen backdrop-blur" />}
+      {isOpen && (
+        <div className="absolute w-screen h-screen backdrop-blur z-20" />
+      )}
       <div className="flex items-center justify-between mt-4 ">
         <div>
           <Link href="/">
             <DaneIcon className="w-8 h-8 ml-6" />
           </Link>
         </div>
-        <div className="relative z-1">
+        <div className="relative z-30">
           <DropdownMenu.Root onOpenChange={setIsOpen}>
             <DropdownMenu.Trigger asChild>
               <button className="mr-4">
                 <motion.div animate={{ rotate: isOpen ? -45 : 0 }}>
-                  <PlusIcon className="h-10 w-10 stroke-2 !z-[100]" />
+                  <PlusIcon className="h-10 w-10 stroke-2" />
                 </motion.div>
               </button>
             </DropdownMenu.Trigger>
