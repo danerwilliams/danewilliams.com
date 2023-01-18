@@ -21,14 +21,14 @@ export const GalleryImage = ({
       className="relative hover:cursor-pointer"
       onClick={onClick}
     >
-      <div className="absolute h-full w-full flex flex-col items-center justify-center z-10 bg-lightmode-component-hover/80 dark:bg-darkmode-component-hover/80 hover:opacity-100 opacity-0 duration-200">
+      <div className="absolute rounded-md h-full w-full flex flex-col items-center justify-center z-10 bg-lightmode-component-hover/80 dark:bg-darkmode-component-hover/80 sm:hover:opacity-100 opacity-0 duration-200">
         <p className="mx-auto">{caption}</p>
       </div>
       <Image
         src={src}
         alt={caption}
         fill
-        className="object-cover"
+        className="object-cover rounded-md"
         sizes="370px"
         priority={priority}
         quality={50}

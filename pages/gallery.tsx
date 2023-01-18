@@ -2,12 +2,10 @@ import type { NextPage } from 'next';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
 import { GalleryImage } from '../components/gallery-image';
-import { createRef, useLayoutEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { GalleryImages } from '../content/gallery/images';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-
-const GALLERY_MARGIN = 8;
 
 const Gallery: NextPage = () => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -25,7 +23,7 @@ const Gallery: NextPage = () => {
       </div>
       <div className="mt-8 ">
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 480: 2, 1023: 3 }}>
-          <Masonry gutter={`${GALLERY_MARGIN}px`}>
+          <Masonry gutter={`16px`}>
             {GalleryImages.map((galleryImageProps, idx) => (
               <GalleryImage
                 key={`Gallery Image ${idx}`}
