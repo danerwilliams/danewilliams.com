@@ -32,7 +32,7 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     caption: 'Notre Dame, IN',
   },
   {
-    src: '/gallery/yosemite.jpeg',
+    src: '/gallery/yosemite-pano.jpeg',
     height: 100,
     caption: 'Yosemite, CA',
   },
@@ -72,7 +72,7 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     caption: 'Niles, MI',
   },
   {
-    src: '/gallery/mariners.jpeg',
+    src: '/gallery/mariners-game.jpeg',
     height: 380,
     caption: 'Seattle, WA',
   },
@@ -82,7 +82,7 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     caption: 'Notre Dame, IN',
   },
   {
-    src: '/gallery/nellie.jpeg',
+    src: '/gallery/nellie-portrait.jpeg',
     height: 300,
     caption: 'Pleasanton, CA',
   },
