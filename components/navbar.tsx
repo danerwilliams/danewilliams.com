@@ -79,7 +79,7 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
   return (
     <>
       {isOpen && (
-        <div className="absolute w-screen h-screen backdrop-blur z-20" />
+        <div className="absolute w-screen h-screen background-brightness-200 dark:backdrop-brightness-50 backdrop-blur z-20" />
       )}
       <div className="flex items-center justify-between mt-4 ">
         <div>
