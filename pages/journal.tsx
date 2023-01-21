@@ -11,6 +11,13 @@ const articles: ArticleProps[] = [
     date: new Date(),
     url: '/journal/officially-a-notre-dame-alumnus',
   },
+  {
+    title: 'Foo bar baz I like code',
+    preview:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    date: new Date(),
+    url: '/journal/officially-a-notre-dame-alumnus',
+  },
 ];
 
 const Journal: NextPage = () => {
@@ -25,7 +32,7 @@ const Journal: NextPage = () => {
         </p>
         <div className="mt-8">
           {articles.map((article) => (
-            <div key={article.title}>
+            <div className="mt-6" key={article.title}>
               <Article {...article} />
             </div>
           ))}
