@@ -1,26 +1,25 @@
 import type { NextPage } from 'next';
-import { Article, ArticleProps } from '../components/article';
+import { Article } from '../components/article';
+import { Article as ArticleMetadata } from '../lib/journal';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
+import { getAllArticles } from '../lib/journal';
 
-const articles: ArticleProps[] = [
-  {
-    title: 'Officially a Notre Dame alumnus',
-    preview:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
-    date: new Date(),
-    url: '/journal/officially-a-notre-dame-alumnus',
-  },
-  {
-    title: 'Foo bar baz I like code',
-    preview:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
-    date: new Date(),
-    url: '/journal/officially-a-notre-dame-alumnus',
-  },
-];
+export async function getStaticProps() {
+  const articles = getAllArticles();
 
-const Journal: NextPage = () => {
+  return {
+    props: {
+      articles,
+    },
+  };
+}
+
+interface JournalProps {
+  articles: ArticleMetadata[];
+}
+
+const Journal: NextPage<JournalProps> = ({ articles }) => {
   return (
     <Page>
       <PageHeader question="What do I think?" />
@@ -32,8 +31,13 @@ const Journal: NextPage = () => {
         </p>
         <div className="mt-8">
           {articles.map((article) => (
-            <div className="mt-6" key={article.title}>
-              <Article {...article} />
+            <div className="mt-4" key={article.title}>
+              <Article
+                description={article.description}
+                title={article.title}
+                date={article.date}
+                url={`/journal/${article.slug}`}
+              />
             </div>
           ))}
         </div>
