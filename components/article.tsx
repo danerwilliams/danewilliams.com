@@ -27,12 +27,21 @@ export const Article: FC<Readonly<ArticleProps>> = ({
             <div className="flex grow">
               <p className="font-light overflow-hidden">{description}</p>
             </div>
-            <div className="flex ml-4 items-end justify-end md:whitespace-nowrap">
-              {new Date(Date.parse(date)).toLocaleString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
+            <div className="flex ml-4 items-end justify-end whitespace-nowrap">
+              <div className="hidden md:block">
+                {new Date(Date.parse(date)).toLocaleString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </div>
+              <div className="md:hidden">
+                {new Date(Date.parse(date)).toLocaleString('en-US', {
+                  year: 'numeric',
+                  month: 'numeric',
+                  day: 'numeric',
+                })}
+              </div>
             </div>
           </div>
         </div>
