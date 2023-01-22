@@ -1,6 +1,9 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+import prism from 'remark-prism';
 
 export interface Article {
   date: string;
@@ -16,7 +19,7 @@ const getArticleSlugs = () => {
   return fs.readdirSync(articlesDirectory);
 };
 
-const getArticleBySlug = (slug: string): Article => {
+export const getArticleBySlug = (slug: string): Article => {
   const trimmedSlug = slug.replace(/\.md$/, '');
   const postPath = join(articlesDirectory, `${trimmedSlug}.md`);
   const fileContents = fs.readFileSync(postPath, 'utf8');
@@ -33,6 +36,7 @@ const getArticleBySlug = (slug: string): Article => {
 
 export const getAllArticles = () => {
   const slugs = getArticleSlugs();
+  console.log({ slugs });
   const posts = slugs
     .map((slug) => getArticleBySlug(slug))
     .sort(
@@ -42,3 +46,11 @@ export const getAllArticles = () => {
 
   return posts;
 };
+
+export async function convertMarkdownToHtml(markdown: string) {
+  const result = await remark()
+    .use(html, { sanitize: false })
+    .use(prism)
+    .process(markdown);
+  return result.toString();
+}

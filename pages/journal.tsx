@@ -1,19 +1,8 @@
 import type { NextPage } from 'next';
 import { Article } from '../components/article';
-import { Article as ArticleMetadata } from '../lib/journal';
+import { getAllArticles, Article as ArticleMetadata } from '../lib/journal';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
-import { getAllArticles } from '../lib/journal';
-
-export async function getStaticProps() {
-  const articles = getAllArticles();
-
-  return {
-    props: {
-      articles,
-    },
-  };
-}
 
 interface JournalProps {
   articles: ArticleMetadata[];
@@ -36,7 +25,7 @@ const Journal: NextPage<JournalProps> = ({ articles }) => {
                 description={article.description}
                 title={article.title}
                 date={article.date}
-                url={`/journal/${article.slug}`}
+                url={`/${article.slug}`}
               />
             </div>
           ))}
@@ -45,5 +34,15 @@ const Journal: NextPage<JournalProps> = ({ articles }) => {
     </Page>
   );
 };
+
+export async function getStaticProps() {
+  const articles = getAllArticles();
+
+  return {
+    props: {
+      articles,
+    },
+  };
+}
 
 export default Journal;
