@@ -7,6 +7,9 @@ import {
 import { Article as ArticleMetadata } from '../lib/journal';
 import { ArticleJsonLd } from 'next-seo';
 import Head from 'next/head';
+import { CalendarIcon } from '@radix-ui/react-icons';
+import { Page } from '../components/page';
+import styles from '../styles/article-body.module.css';
 
 interface ArticleProps {
   article: ArticleMetadata;
@@ -14,7 +17,7 @@ interface ArticleProps {
 }
 
 const Article: NextPage<ArticleProps> = ({ article, content }) => {
-  const title = `${article.title} // Dane Williams`;
+  const title = `${article.title} | Dane Williams`;
   const description = article.description || '';
   const url = `https://danewilliams.dev/${article.slug}`;
   const date = new Date(article.date).toISOString();
@@ -39,8 +42,29 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
         dateModified={date}
         description={description}
       />
-
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <Page>
+        <div className="flex flex-col md:max-w-[551.5px] lg:max-w-prose mt-8">
+          <div className="flex flex-col text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
+            <h1 className="text-3xl font-medium">{article.title}</h1>
+            <div className="flex items-center text-lg mt-2">
+              <CalendarIcon height={20} width={20} />
+              <div className="ml-2">
+                {new Date(Date.parse(date)).toLocaleString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="article-body mt-6">
+            <div
+              className={styles['article-body']}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </div>
+        </div>
+      </Page>
     </>
   );
 };
@@ -63,8 +87,6 @@ export async function getStaticProps({
 
 export async function getStaticPaths() {
   const articles = getAllArticles();
-
-  console.log({ articles: articles.map((article) => article.slug) });
 
   return {
     paths: articles.map((article) => {

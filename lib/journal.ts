@@ -36,7 +36,6 @@ export const getArticleBySlug = (slug: string): Article => {
 
 export const getAllArticles = () => {
   const slugs = getArticleSlugs();
-  console.log({ slugs });
   const posts = slugs
     .map((slug) => getArticleBySlug(slug))
     .sort(

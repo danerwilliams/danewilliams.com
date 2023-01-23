@@ -1,0 +1,21 @@
+.article-body p,
+.article-body ul,
+.article-body ol,
+.article-body blockquote {
+  @apply my-2;
+}
+
+.article-body p {
+  @apply text-lg;
+}
+
+.article-body h2 {
+  @apply text-2xl mt-4 mb-2 text-lightmode-text-high-contrast;
+}
+:global(.dark) .article-body h2 {
+  @apply text-darkmode-text-high-contrast;
+}
+
+.article-body h3 {
+  @apply text-xl mt-2 mb-1;
+}
