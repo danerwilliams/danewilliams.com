@@ -59,7 +59,7 @@ Then, instead of storing the actual images on our Mongo database with blog stora
 We got awesome feedback on our project, in fact our instructor, [Professor Tim Weninger](https://timweninger.com/), said it was one of his "all-time favorite projects".
 He even played a game of Ruski with us to celebrate launching the app!
 
-![professorski](/images/professorski.jpg)
+![professorski](/static/journal/introducing-play-ruski/professorski.jpg)
 
 Right now, we are continuing to let the app run on our Netlify + AWS EC2 deployment as a few hundred students at Notre Dame are using it.
 We'll see how long we keep it running since we have to spend some money to keep it deployed, but regardless this was an awesome learning experience and some of the most fun I've had on a software development project!

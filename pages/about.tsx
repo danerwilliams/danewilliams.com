@@ -59,7 +59,7 @@ const About: NextPage = () => {
             height={320}
             width={320}
             alt="Dane Williams Headshot"
-            src="/images/headshot.jpg"
+            src="/static/images/headshot.jpg"
             className="float-right rounded-2xl mb-6 ml-6 w-48 md:w-72 lg:w-80"
           />
           <p>

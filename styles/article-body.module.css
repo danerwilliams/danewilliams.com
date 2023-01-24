@@ -5,8 +5,23 @@
   @apply my-2;
 }
 
-.article-body p {
-  @apply text-lg;
+.article-body a {
+  @apply underline underline-offset-2 decoration-2 text-lightmode-text-high-contrast;
+}
+:global(.dark) .article-body a {
+  @apply text-darkmode-text-high-contrast;
+}
+
+.article-body img {
+  @apply my-6 rounded-lg;
+}
+
+.article-body ul {
+  @apply list-disc ml-4;
+}
+
+.article-body ol {
+  @apply list-decimal ml-4;
 }
 
 .article-body h2 {
@@ -18,4 +33,21 @@
 
 .article-body h3 {
   @apply text-xl mt-2 mb-1;
+}
+:global(.dark) .article-body h3 {
+  @apply text-darkmode-text-high-contrast;
+}
+
+.article-body h4 {
+  @apply text-lg mt-2 mb-1;
+}
+:global(.dark) .article-body h4 {
+  @apply text-darkmode-text-high-contrast;
+}
+
+.article-body h5 h6 {
+  @apply text-base mt-2 mb-1;
+}
+:global(.dark) .article-body h5 h6 {
+  @apply text-darkmode-text-high-contrast;
 }

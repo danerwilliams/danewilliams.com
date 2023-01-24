@@ -17,7 +17,7 @@ After my college friends graduate, I plan to move to New York City with them som
 
 Now that I've completed my degree, here's a list of all the classes I took.
 
-Core Requirements / General Education:
+### Core Requirements / General Education
 
 - Design Thinking (DESN 20203)
 - Micro Econ (ECON 10010)
@@ -28,7 +28,7 @@ Core Requirements / General Education:
 - Formal Logic (PHIL 30313)
 - Writing & Rhetoric (WR 13300)
 
-Engineering Requirements:
+### Engineering Requirements
 
 - Intro Chemistry (CHEM 10171)
 - Calc 1 (placed out)
@@ -40,7 +40,7 @@ Engineering Requirements:
 - Intro Engineering 1 (EG 10111)
 - Intro Engineering 2 (EG 10112)
 
-Computer Science Major Requirements:
+### Computer Science Major Requirements
 
 - Discrete Math (CSE 20110)
 - Fundamentals of Computing (CSE 20311)
@@ -55,7 +55,7 @@ Computer Science Major Requirements:
 - Algorithms (CSE 40113)
 - Ethical & Professional Issues (CSE 40175)
 
-Computer Science Elective Requirements:
+### Computer Science Elective Requirements
 
 - Databases (CSE 30246)
 - Computer Networks (CSE 30264)

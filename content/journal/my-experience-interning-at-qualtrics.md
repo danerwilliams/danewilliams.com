@@ -17,11 +17,11 @@ However, Qualtrics also paid for us to have a week long visit to the Seattle off
 During the trip we went boating, attended a mariners game, and explored downtown Seattle (the new Qualtrics tower is in the heart of downtown right next to Benaroya Hall where my high school graduation took place).
 Below are a few photos from the trip :-)
 
-![interns_at_ivars](/images/ivars.jpg)
+![Qualtrics SWE intern group at Ivar's Acres of Clams at the Seattle waterfront](/static/journal/my-experience-interning-at-qualtrics/ivars.jpg)
 
-![seattle_boat](/images/seattle_boat.jpg)
+![View of University of Washington stadium from a boat in Lake Washington](/static/journal/my-experience-interning-at-qualtrics/seattle-boat.jpg)
 
-![seattle_view](/images/seattle_view.jpg)
+![view of the Space Needle in Seattle](/static/journal/my-experience-interning-at-qualtrics/seattle-view.jpg)
 
 Ultimately, in the process of building my feature I learned all about working in a large codebase with many contributors and how to effectively maintain it, while also improving my full stack development skills.
 From writing automated tests, to improving the readability of my code, I got tons of valuable feedback from the other members of the team on every merge request I submitted this summer and I am much stronger developer as a result.
