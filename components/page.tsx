@@ -5,7 +5,7 @@ interface PageProps {
 }
 
 export const Page: FC<Readonly<PageProps>> = ({ children }) => (
-  <div className="mt-6 lg:max-w-[743.5px] md:max-w-[551.5px] max-w-none">
+  <div className="relative mt-6 lg:max-w-[743.5px] md:max-w-[551.5px] max-w-full">
     {children}
   </div>
 );

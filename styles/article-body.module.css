@@ -6,10 +6,10 @@
 }
 
 .article-body code:not(code[class*='language-']) {
-  @apply bg-lightmode-component-selected rounded-lg px-1;
+  @apply bg-lightmode-component rounded px-1 py-0.5;
 }
 :global(.dark) .article-body code:not(code[class*='language-']) {
-  @apply bg-darkmode-component-selected;
+  @apply bg-darkmode-component;
 }
 
 .article-body a {
