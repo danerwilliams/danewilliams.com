@@ -3,7 +3,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { PlusIcon, FaceIcon } from '@radix-ui/react-icons';
+import { PlusIcon } from '@radix-ui/react-icons';
 import { useRouter } from 'next/router';
 import { ThemeToggle } from './theme-toggle';
 import { DaneIcon } from './icons/dane-icon';

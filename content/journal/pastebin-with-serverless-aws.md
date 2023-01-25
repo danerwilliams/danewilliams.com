@@ -18,7 +18,7 @@ The general architecture is as follows:
 - Frontend client is hosted in the site folder of S3 Bucket
 - Communicate with backend via POST requests to the [API Gateway](https://aws.amazon.com/api-gateway/?nc2=h_ql_prod_serv_apig) endpoints, which call [Lambda](https://aws.amazon.com/lambda/?nc2=h_ql_prod_serv_lbd) functions that upload files or generate link forwarding objects in [S3](https://aws.amazon.com/s3/?nc2=h_ql_prod_st_s3) with [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
-![architecture](/images/pstbin_architecture.jpg)
+![architecture](/static/journal/pastebin-with-serverless-aws/pstbin-architecture.jpg)
 
 ## Takeaways
 

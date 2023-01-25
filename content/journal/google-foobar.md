@@ -8,12 +8,12 @@ date: '2020-08-12'
 
 Recently I was looking up some java documentation as I have not worked with the language since my AP CS class sophomore year of high school, and ended up coming across an exciting surprise!
 
-![foobar1](/images/foobar1.jpg)
+![Screenshot of Google FooBar invite message](/static/journal/google-foobar/foobar-1.jpg)
 
 Intrigued, I proceeded by clicking the button "I want to play", and discovered the Google FooBar challenge!
 Clicking the button led me to a terminal in the browser with some instructions, which allows for your to request different coding challenges which can be solved in python 2 (no python 3 :-/ ) or in java.
 
-![foobar2](/images/foobar2.jpg)
+![Screenshot of Google FooBar console](/static/journal/google-foobar/foobar-2.jpg)
 
 Previously I had never heard of FooBar, so I did some research to learn a bit more.
 Basically this is being used as a recruiting tool at Google to identify developers by monitoring people's Google searches.
