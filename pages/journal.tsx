@@ -3,12 +3,32 @@ import { Article } from '../components/article';
 import { getAllArticles, Article as ArticleMetadata } from '../lib/journal';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
+import Fuse from 'fuse.js';
+import { useState } from 'react';
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 
 interface JournalProps {
   articles: ArticleMetadata[];
 }
 
 const Journal: NextPage<JournalProps> = ({ articles }) => {
+  const [searchArticles, setSearchArticles] = useState(articles);
+
+  const search = (query: string) => {
+    if (!query) {
+      setSearchArticles(articles);
+      return;
+    }
+
+    const fuse = new Fuse(articles, {
+      keys: ['title'],
+      threshold: 0.4,
+    });
+    const result = fuse.search(query);
+
+    setSearchArticles(result.map((r) => r.item));
+  };
+
   return (
     <Page>
       <PageHeader question="What do I think?" />
@@ -18,8 +38,19 @@ const Journal: NextPage<JournalProps> = ({ articles }) => {
           incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet
           justo.
         </p>
-        <div className="mt-8">
-          {articles.map((article) => (
+        <div className="flex relative h-14 mt-8 items-center w-full">
+          <div className="absolute pl-4">
+            <MagnifyingGlassIcon className="h-6 w-6" />
+          </div>
+          <input
+            className="w-full h-full rounded-lg border text-lg pl-14 font-light bg-lightmode-component-hover dark:bg-darkmode-component-hover border-lightmode-border-interactive dark:border-darkmode-border-interactive"
+            type="text"
+            onChange={(e) => search(e.target.value)}
+            placeholder="Find an article"
+          />
+        </div>
+        <div className="mt-6">
+          {searchArticles.map((article) => (
             <div className="mt-4" key={article.title}>
               <Article
                 description={article.description}
