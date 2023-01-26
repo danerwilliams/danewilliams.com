@@ -30,10 +30,6 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content={url} property="og:url" />
-        {/* <link
-          rel="stylesheet"
-          href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
-        /> */}
       </Head>
 
       <ArticleJsonLd
