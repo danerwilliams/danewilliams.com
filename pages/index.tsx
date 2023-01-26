@@ -25,7 +25,8 @@ const Home: NextPage = () => {
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
-      <div className="self-center">
+      <div className="flex flex-grow items-center justify-center">
+        {/* <div>test</div> */}
         <Title />
       </div>
     </>
