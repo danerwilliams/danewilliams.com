@@ -13,19 +13,15 @@ interface JournalProps {
 const Journal: NextPage<JournalProps> = ({ articles }) => {
   const [searchArticles, setSearchArticles] = useState(articles);
 
-  const fuse = new Fuse(searchArticles, {
-    keys: ['name', 'tags'],
-  });
-
   const search = (query: string) => {
     if (!query) {
       setSearchArticles(articles);
       return;
     }
-    query = query.toLowerCase();
 
     const fuse = new Fuse(articles, {
-      keys: ['title', 'description'],
+      keys: ['title'],
+      threshold: 0.4,
     });
     const result = fuse.search(query);
 
@@ -47,7 +43,7 @@ const Journal: NextPage<JournalProps> = ({ articles }) => {
           placeholder="Search Technologies"
         />
         <div className="mt-8">
-          {articles.map((article) => (
+          {searchArticles.map((article) => (
             <div className="mt-4" key={article.title}>
               <Article
                 description={article.description}
