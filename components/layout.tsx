@@ -8,9 +8,9 @@ interface LayoutProps {
 
 export const Layout: FC<Readonly<LayoutProps>> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen items-center bg-lightmode-background dark:bg-darkmode-background text-lightmode-text dark:text-darkmode-text">
+    <div className="flex flex-col min-h-screen bg-lightmode-background dark:bg-darkmode-background text-lightmode-text dark:text-darkmode-text">
       <Navbar />
-      <main className="flex w-full px-6">{children}</main>
+      <main className="flex flex-grow justify-center px-6">{children}</main>
       <Footer />
     </div>
   );
