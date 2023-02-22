@@ -5,6 +5,10 @@
   @apply my-2;
 }
 
+.article-body {
+  @apply break-words;
+}
+
 .article-body code:not(code[class*='language-']) {
   @apply bg-lightmode-component rounded px-1 py-0.5;
 }
