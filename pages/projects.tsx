@@ -4,6 +4,8 @@ import { HighlightedProject } from '../components/highlighted-project';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
 import { SectionHeader } from '../components/section-header';
+import { Timeline } from '../components/timeline';
+import { TimelineProjects } from '../content/projects';
 
 const Projects: NextPage = () => {
   return (
@@ -41,7 +43,9 @@ const Projects: NextPage = () => {
         </div>
         <div className="mt-8">
           <SectionHeader text="Timeline" />
-          <div className="mt-8"></div>
+          <div className="mt-8">
+            <Timeline projects={TimelineProjects} />
+          </div>
         </div>
       </div>
     </Page>
