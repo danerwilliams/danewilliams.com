@@ -6,10 +6,10 @@ import {
 } from './timeline-project';
 
 export interface TimelineProps {
-  projects: Omit<
+  projects: (Omit<
     TimelineProjectProps,
     'isRight' | 'isFirst' | 'isLast' | 'newYear'
-  >[];
+  > & { date: string })[];
 }
 
 export const Timeline: FC<Readonly<TimelineProps>> = ({ projects }) => {
@@ -25,11 +25,11 @@ export const Timeline: FC<Readonly<TimelineProps>> = ({ projects }) => {
               isFirst={index === 0}
               isLast={index === projects.length - 1}
               newYear={
-                index === 0
+                index === projects.length - 1
                   ? undefined
-                  : project.date.getFullYear() !==
-                    projects[index - 1]?.date.getFullYear()
-                  ? projects[index - 1].date.getFullYear()
+                  : new Date(project.date).getFullYear() !==
+                    new Date(projects[index + 1]?.date).getFullYear()
+                  ? new Date(projects[index].date).getFullYear()
                   : undefined
               }
             />
@@ -42,10 +42,10 @@ export const Timeline: FC<Readonly<TimelineProps>> = ({ projects }) => {
         {projects.map((project, index) => (
           <div key={project.name} className="mt-4">
             {(index === 0 ||
-              project.date.getFullYear() !==
-                projects[index - 1].date.getFullYear()) && (
+              new Date(project.date).getFullYear() !==
+                new Date(projects[index - 1].date).getFullYear()) && (
               <h3 className="mb-2 mt-8 font-medium text-xl">
-                {project.date.getFullYear()}
+                {new Date(project.date).getFullYear()}
               </h3>
             )}
             <TimelineProjectCard {...project} />

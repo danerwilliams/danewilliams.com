@@ -11,45 +11,11 @@ import { PreviousCities } from '../components/previous-cities';
 import { ResumeItem, ResumeItemProps } from '../components/resume-item';
 import { SectionHeader } from '../components/section-header';
 
-const resumeItems: ResumeItemProps[] = [
-  {
-    company: 'WorkOS',
-    logo: <WorkosIcon />,
-    title: 'Software Engineer',
-    link: 'https://workos.com',
-    location: 'New York, NY',
-    startDate: new Date(2022, 0),
-  },
-  {
-    company: 'Qualtrics',
-    logo: <QualtricsIcon />,
-    title: 'Software Engineer Intern',
-    link: 'https://qualtrics.com',
-    location: 'Seattle, WA',
-    startDate: new Date(2021, 4),
-    endDate: new Date(2021, 7),
-  },
-  {
-    company: 'AT&T Labs',
-    logo: <AttIcon />,
-    title: 'Software Engineer Intern',
-    link: 'https://about.att.com/sites/labs',
-    location: 'San Ramon, CA',
-    startDate: new Date(2020, 5),
-    endDate: new Date(2020, 7),
-  },
-  {
-    company: 'Symetra',
-    logo: <SymetraIcon />,
-    title: 'Cloud Engineer Intern',
-    link: 'https://symetra.com',
-    location: 'Bellevue, WA',
-    startDate: new Date(2019, 4),
-    endDate: new Date(2019, 7),
-  },
-];
+interface AboutProps {
+  resumeItems: ResumeItemProps[];
+}
 
-const About: NextPage = () => {
+const About: NextPage<AboutProps> = ({ resumeItems }) => {
   return (
     <Page>
       <PageHeader question="Who am I?" />
@@ -100,5 +66,49 @@ const About: NextPage = () => {
     </Page>
   );
 };
+
+export async function getStaticProps() {
+  const resumeItems: ResumeItemProps[] = [
+    {
+      company: 'WorkOS',
+      logo: 'workos',
+      title: 'Software Engineer',
+      link: 'https://workos.com',
+      location: 'New York, NY',
+      startDate: new Date(2022, 0).toISOString(),
+    },
+    {
+      company: 'Qualtrics',
+      logo: 'qualtrics',
+      title: 'Software Engineer Intern',
+      link: 'https://qualtrics.com',
+      location: 'Seattle, WA',
+      startDate: new Date(2021, 4).toISOString(),
+      endDate: new Date(2021, 7).toISOString(),
+    },
+    {
+      company: 'AT&T Labs',
+      logo: 'att',
+      title: 'Software Engineer Intern',
+      link: 'https://about.att.com/sites/labs',
+      location: 'San Ramon, CA',
+      startDate: new Date(2020, 5).toISOString(),
+      endDate: new Date(2020, 7).toISOString(),
+    },
+    {
+      company: 'Symetra',
+      logo: 'symetra',
+      title: 'Cloud Engineer Intern',
+      link: 'https://symetra.com',
+      location: 'Bellevue, WA',
+      startDate: new Date(2019, 4).toISOString(),
+      endDate: new Date(2019, 7).toISOString(),
+    },
+  ];
+
+  return {
+    props: { resumeItems },
+  };
+}
 
 export default About;

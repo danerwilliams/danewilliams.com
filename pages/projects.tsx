@@ -5,9 +5,17 @@ import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
 import { SectionHeader } from '../components/section-header';
 import { Timeline } from '../components/timeline';
+import { TimelineProjectProps } from '../components/timeline-project';
 import { TimelineProjects } from '../content/projects';
 
-const Projects: NextPage = () => {
+interface ProjectsProps {
+  timelineProjects: (Omit<
+    TimelineProjectProps,
+    'isRight' | 'isFirst' | 'isLast' | 'newYear'
+  > & { date: string })[];
+}
+
+const Projects: NextPage<ProjectsProps> = ({ timelineProjects }) => {
   return (
     <Page>
       <PageHeader question="What have I built?" />
@@ -44,12 +52,24 @@ const Projects: NextPage = () => {
         <div className="mt-8">
           <SectionHeader text="Timeline" />
           <div className="mt-8">
-            <Timeline projects={TimelineProjects} />
+            <Timeline projects={timelineProjects} />
           </div>
         </div>
       </div>
     </Page>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      timelineProjects: TimelineProjects.sort(
+        (a, b) =>
+          new Date(a.date).getMilliseconds() -
+          new Date(b.date).getMilliseconds(),
+      ),
+    },
+  };
+}
 
 export default Projects;
