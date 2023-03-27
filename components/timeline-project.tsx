@@ -27,9 +27,10 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
   isRight,
   isFirst,
   isLast,
+  newYear,
 }) => {
   return (
-    <>
+    <div className="flex flex-col w-full mt-5">
       {isFirst && (
         <div
           className={`relative flex w-[calc(50%+2px)] h-8 border-r-4 border-lightmode-border dark:border-darkmode-border`}
@@ -89,6 +90,29 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
           </div>
         </div>
       </div>
+      {newYear && (
+        <div
+          className={`flex mt-5 -mb-5 h-10 w-[calc(50%+2px)] ${
+            isRight ? 'self-end flex-row-reverse' : ''
+          }`}
+        >
+          <div className={`flex w-80`} />
+          <div className="relative flex">
+            <h3
+              className={`absolute bottom-[-13px] ${
+                isRight ? '' : 'left-[-42px]'
+              } font-medium text-lg`}
+            >
+              {newYear}
+            </h3>
+          </div>
+          <div
+            className={`relative flex grow border-b-2 ${
+              isRight ? 'border-l-4 mr-2' : 'border-r-4 ml-2'
+            } border-lightmode-border dark:border-darkmode-border`}
+          />
+        </div>
+      )}
       {isLast && (
         <div
           className={`relative flex mt-5 w-[calc(50%+2px)] h-8 border-r-4 border-lightmode-border dark:border-darkmode-border`}
@@ -98,6 +122,6 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
