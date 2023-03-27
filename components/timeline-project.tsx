@@ -3,18 +3,19 @@ import { FC } from 'react';
 import { DaneIcon } from './icons/dane-icon';
 import { NdMonogramIcon } from './icons/nd-monogram-icon';
 import { QualtricsIcon } from './icons/qualtrics-icon';
-import { WorkosIcon } from './icons/workos-icon';
 import { WorkosIconTrimmed } from './icons/workos-icon-trimmed';
 
 export interface TimelineProjectProps {
   name: string;
   url?: string;
   description: string;
+  date: Date;
   organization: 'personal' | 'workos' | 'qualtrics' | 'nd';
   secondaryDescription?: string;
   isRight: boolean;
   isFirst: boolean;
   isLast: boolean;
+  newYear?: number;
 }
 
 export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
@@ -43,7 +44,11 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
           isRight ? 'self-end flex-row-reverse' : ''
         }`}
       >
-        <div className="flex w-72 border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200">
+        <div
+          className={`flex w-72 ${
+            isFirst ? '' : '-mt-20'
+          } border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
+        >
           <a href={url} target="_blank" rel="noreferrer">
             <div className="flex grow flex-col items-left m-2">
               <h2 className="text-xl mb-1 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">

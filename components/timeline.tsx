@@ -2,7 +2,10 @@ import { FC } from 'react';
 import { TimelineProject, TimelineProjectProps } from './timeline-project';
 
 export interface TimelineProps {
-  projects: Omit<TimelineProjectProps, 'isRight' | 'isFirst' | 'isLast'>[];
+  projects: Omit<
+    TimelineProjectProps,
+    'isRight' | 'isFirst' | 'isLast' | 'newYear'
+  >[];
 }
 
 export const Timeline: FC<Readonly<TimelineProps>> = ({ projects }) => {
