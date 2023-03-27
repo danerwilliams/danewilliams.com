@@ -9,7 +9,6 @@ export interface TimelineProjectProps {
   name: string;
   url?: string;
   description: string;
-  date: Date;
   organization: 'personal' | 'workos' | 'qualtrics' | 'nd';
   secondaryDescription?: string;
   isRight: boolean;

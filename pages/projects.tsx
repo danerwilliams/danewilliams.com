@@ -9,10 +9,10 @@ import { TimelineProjectProps } from '../components/timeline-project';
 import { TimelineProjects } from '../content/projects';
 
 interface ProjectsProps {
-  timelineProjects: Omit<
+  timelineProjects: (Omit<
     TimelineProjectProps,
     'isRight' | 'isFirst' | 'isLast' | 'newYear'
-  >[];
+  > & { date: string })[];
 }
 
 const Projects: NextPage<ProjectsProps> = ({ timelineProjects }) => {
@@ -63,7 +63,11 @@ const Projects: NextPage<ProjectsProps> = ({ timelineProjects }) => {
 export async function getStaticProps() {
   return {
     props: {
-      timelineProjects: TimelineProjects,
+      timelineProjects: TimelineProjects.sort(
+        (a, b) =>
+          new Date(a.date).getMilliseconds() -
+          new Date(b.date).getMilliseconds(),
+      ),
     },
   };
 }
