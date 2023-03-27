@@ -46,8 +46,8 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
         }`}
       >
         <div
-          className={`flex w-72 ${
-            isFirst ? '' : '-mt-20'
+          className={`flex max-lg:w-56 w-72 ${
+            isFirst ? '' : 'max-lg:-mt-24 -mt-20'
           } border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
         >
           <a href={url} target="_blank" rel="noreferrer">
@@ -96,7 +96,7 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
             isRight ? 'self-end flex-row-reverse' : ''
           }`}
         >
-          <div className={`flex w-80`} />
+          <div className={`flex max-lg:w-64 w-80`} />
           <div className="relative flex">
             <h3
               className={`absolute bottom-[-13px] ${
@@ -115,7 +115,7 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
       )}
       {isLast && (
         <div
-          className={`relative flex mt-5 w-[calc(50%+2px)] h-8 border-r-4 border-lightmode-border dark:border-darkmode-border`}
+          className={`relative flex mt-5 w-[calc(50%+2px)] h-12 border-r-4 border-lightmode-border dark:border-darkmode-border`}
         >
           <div className={`absolute right-[-22px] bottom-[-14px] `}>
             <ChevronDownIcon className="h-10 w-10 text-lightmode-border dark:text-darkmode-border" />
