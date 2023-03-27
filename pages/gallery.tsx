@@ -1,13 +1,17 @@
 import type { NextPage } from 'next';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
-import { GalleryImage } from '../components/gallery-image';
+import { GalleryImage, GalleryImageProps } from '../components/gallery-image';
 import { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { GalleryImages } from '../content/gallery/images';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-const Gallery: NextPage = () => {
+interface GalleryProps {
+  galleryImages: Omit<GalleryImageProps, 'onClick'>[];
+}
+
+const Gallery: NextPage<GalleryProps> = ({ galleryImages }) => {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [currentLightboxSlide, setCurrentLightboxSlide] = useState(1);
 
@@ -24,7 +28,7 @@ const Gallery: NextPage = () => {
       <div className="mt-8">
         <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 480: 2, 1023: 3 }}>
           <Masonry gutter={`16px`}>
-            {GalleryImages.map((galleryImageProps, idx) => (
+            {galleryImages.map((galleryImageProps, idx) => (
               <GalleryImage
                 key={`Gallery Image ${idx}`}
                 onClick={() => {
@@ -39,12 +43,20 @@ const Gallery: NextPage = () => {
         </ResponsiveMasonry>
         <FsLightbox
           toggler={isLightboxOpen}
-          sources={GalleryImages.map((image) => image.src)}
+          sources={galleryImages.map((image) => image.src)}
           slide={currentLightboxSlide}
         />
       </div>
     </Page>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      galleryImages: GalleryImages,
+    },
+  };
+}
 
 export default Gallery;
