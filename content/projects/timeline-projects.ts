@@ -71,4 +71,54 @@ export const TimelineProjects: Omit<
     secondaryDescription:
       'Published “A Study of Hierarchical Sankey Diagrams: Design and Evaluation” to ISVC 2021 academic research conference.',
   },
+  {
+    name: 'Operational Data Integration',
+    organization: 'qualtrics',
+    date: new Date('2021-08-01'),
+    description:
+      'Built a feature for the Frontline Feedback product that automatically syncs data from external platforms such as Salesforce into Qualtrics facing thousands of customers.',
+    secondaryDescription:
+      'Wrote code and design documents under guidance of a mentor.',
+  },
+  {
+    name: 'playruski.com',
+    organization: 'nd',
+    url: 'https://github.com/coderquad/ruski',
+    date: new Date('2021-05-01'),
+    description:
+      'Full stack web app built in Angular/ Node / GraphQL with other students for tracking results and ranking athletes in a popular sport at Notre Dame.',
+    secondaryDescription:
+      'Handled all of the infrastructure and back end development.',
+  },
+  {
+    name: 'pstb.in',
+    organization: 'personal',
+    url: 'https://github.com/danerwilliams/pstb.in',
+    date: new Date('2020-12-01'),
+    description:
+      'Pastebin and url shortener built with serverless AWS. Utilizes AWS Lambda, API Gateway, S3, and the Chalice framework.',
+  },
+  {
+    name: 'B Minor Compiler',
+    organization: 'nd',
+    date: new Date('2020-11-01'),
+    description:
+      'A 4 stage compiler consisting of a scanner, parser, pretty printer, and type checker for the B Minor programming language written with C, Flex, and Bison.',
+  },
+  {
+    name: 'Pork Chop',
+    organization: 'personal',
+    url: 'https://github.com/danerwilliams/pork-chop',
+    date: new Date('2020-05-01'),
+    description:
+      'GroupMe chat bot written in Python and trained on 100s of thousands of messages from an iMessage group chat.',
+  },
+  {
+    name: 'danewilliams.me',
+    organization: 'personal',
+    url: 'https://github.com/danerwilliams/danewilliams.me',
+    date: new Date('2020-04-01'),
+    description:
+      'My original personal website built using Hugo along with customizations using vanilla Javascript and CSS.',
+  },
 ];
