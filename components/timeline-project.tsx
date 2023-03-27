@@ -48,21 +48,14 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
         <div
           className={`flex max-lg:w-56 w-72 ${
             isFirst ? '' : 'max-lg:-mt-24 -mt-20'
-          } border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
+          }`}
         >
-          <a href={url} target="_blank" rel="noreferrer">
-            <div className="flex grow flex-col items-left m-2">
-              <h2 className="text-xl mb-1 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
-                {name}
-              </h2>
-              <p className="text-left font-light">{description}</p>
-              {secondaryDescription && (
-                <p className="text-left mt-2 font-light">
-                  {secondaryDescription}
-                </p>
-              )}
-            </div>
-          </a>
+          <TimelineProjectCard
+            name={name}
+            url={url}
+            description={description}
+            secondaryDescription={secondaryDescription}
+          />
         </div>
         <div
           className={`relative flex grow border-b-2 ${
@@ -122,6 +115,38 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
           </div>
         </div>
       )}
+    </div>
+  );
+};
+
+export interface TimelineProjectCardProps {
+  name: string;
+  url?: string;
+  description: string;
+  secondaryDescription?: string;
+}
+
+export const TimelineProjectCard: FC<Readonly<TimelineProjectCardProps>> = ({
+  url,
+  name,
+  description,
+  secondaryDescription,
+}) => {
+  return (
+    <div
+      className={`flex border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
+    >
+      <a href={url} target="_blank" rel="noreferrer">
+        <div className="flex grow flex-col items-left m-2">
+          <h2 className="text-xl mb-1 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
+            {name}
+          </h2>
+          <p className="text-left font-light">{description}</p>
+          {secondaryDescription && (
+            <p className="text-left mt-2 font-light">{secondaryDescription}</p>
+          )}
+        </div>
+      </a>
     </div>
   );
 };
