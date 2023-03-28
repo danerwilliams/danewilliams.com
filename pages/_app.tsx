@@ -11,10 +11,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute="class">
       <Layout>
         <DefaultSeo
-          title="Dane Williams"
+          titleTemplate="%s | Dane Williams"
+          defaultTitle="Dane Williams"
           description={description}
           canonical="https://danewilliams.dev"
           openGraph={{
+            title: 'Dane Williams',
             type: 'website',
             locale: 'en_US',
             url: 'https://danewilliams.dev',
