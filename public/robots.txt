@@ -1,0 +1,5 @@
+# https://www.youtube.com/watch?v=IBZp_duus_8
+
+User-agent: *
+
+Sitemap: https://danewilliams.me/index.xml
