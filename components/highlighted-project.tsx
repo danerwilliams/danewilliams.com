@@ -19,7 +19,13 @@ export const HighlightedProject: FC<Readonly<HighlightedProjectProps>> = ({
   stats,
 }) => {
   return (
-    <a href={url} target="_blank" className="flex grow" rel="noreferrer">
+    <a
+      href={url}
+      target="_blank"
+      className="flex grow"
+      rel="noreferrer"
+      aria-label={`Go to the external page for the ${name} project`}
+    >
       <div className="flex grow h-40 border rounded-xl border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200">
         <div className="flex grow flex-col items-center justify-between m-3">
           <h2 className="text-2xl font-medium text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">

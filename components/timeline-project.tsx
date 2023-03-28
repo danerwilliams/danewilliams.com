@@ -135,7 +135,12 @@ export const TimelineProjectCard: FC<Readonly<TimelineProjectCardProps>> = ({
     <div
       className={`flex border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
     >
-      <a href={url} target="_blank" rel="noreferrer">
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Go to the external page for the ${name} project`}
+      >
         <div className="flex grow flex-col items-left m-2">
           <h2 className="text-xl mb-1 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
             {name}

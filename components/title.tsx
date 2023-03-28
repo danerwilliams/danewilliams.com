@@ -30,6 +30,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
             href="https://workos.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go to the external page for WorkOS"
           >
             WorkOS
           </a>
@@ -41,6 +42,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
           href="https://linkedin.com/in/danerwilliams"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Dane's LinkedIn profile"
         >
           <LinkedInLogoIcon className={logoClassName} />
         </a>
@@ -48,6 +50,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
           href="https://twitter.com/danerwilliams"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Dane's Twitter profile"
         >
           <TwitterLogoIcon className={logoClassName} />
         </a>
@@ -55,10 +58,16 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
           href="https://github.com/danerwilliams"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Dane's GitHub profile"
         >
           <GitHubLogoIcon className={logoClassName} />
         </a>
-        <a href="mailto:hey@dane.to" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:hey@dane.to"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Send an email to Dane"
+        >
           <EnvelopeClosedIcon className={logoClassName} />
         </a>
       </div>
