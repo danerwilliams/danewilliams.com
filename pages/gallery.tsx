@@ -31,6 +31,12 @@ const Gallery: NextPage<GalleryProps> = ({
           title,
           description,
           url: 'https://danewilliams.dev/gallery',
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/gallery.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
       <Page>

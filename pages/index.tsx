@@ -17,6 +17,12 @@ const Home: NextPage<HomeProps> = ({ title, description }) => {
           title,
           description,
           url: 'https://danewilliams.dev',
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/index.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
 

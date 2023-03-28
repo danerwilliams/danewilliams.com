@@ -41,6 +41,12 @@ const Journal: NextPage<JournalProps> = ({ articles, title, description }) => {
           title,
           description,
           url: 'https://danewilliams.dev/journal',
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/journal.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
       <Page>

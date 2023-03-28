@@ -31,6 +31,12 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
           title,
           description,
           url,
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/article.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
       <ArticleJsonLd

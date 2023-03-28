@@ -32,6 +32,12 @@ const Projects: NextPage<ProjectsProps> = ({
           title,
           description,
           url: 'https://danewilliams.dev/projects',
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/projects.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
       <Page>
