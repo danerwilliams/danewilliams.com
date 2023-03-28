@@ -6,24 +6,45 @@ import { ThemeProvider } from 'next-themes';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const description = 'Dane Williams is a software engineer in New York City.';
   return (
     <ThemeProvider attribute="class">
       <Layout>
         <DefaultSeo
           title="Dane Williams"
-          titleTemplate="Dane Williams"
-          description="Dane Williams is a software engineer in New York City."
-          canonical="https://danewilliams.dev/"
+          description={description}
+          canonical="https://danewilliams.dev"
           openGraph={{
             type: 'website',
             locale: 'en_US',
-            url: 'https://danewilliams.dev/',
+            url: 'https://danewilliams.dev',
             siteName: 'Dane Williams',
+            description,
           }}
           twitter={{
             handle: '@danerwilliams',
           }}
-          additionalLinkTags={[]}
+          additionalLinkTags={[
+            { rel: 'manifest', href: '/favicon/site.webmanifest' },
+            {
+              rel: 'apple-touch-icon',
+              type: 'image/png',
+              sizes: '180x180',
+              href: '/favicon/apple-touch-icon.png',
+            },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '32x32',
+              href: '/favicon/favicon-32x32.png',
+            },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '16x16',
+              href: '/favicon/favicon-16x16.png',
+            },
+          ]}
         />
         <SocialProfileJsonLd
           type="Person"

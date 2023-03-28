@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import { Title } from '../components/title';
 
 interface HomeProps {
@@ -10,26 +10,16 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({ title, description }) => {
   return (
     <>
-      <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-      </Head>
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={{
+          title,
+          description,
+          url: 'https://danewilliams.dev',
+        }}
+      />
+
       <div className="flex flex-grow items-center">
         <Title title={title} description={description} />
       </div>
