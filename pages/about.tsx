@@ -1,9 +1,5 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import { AttIcon } from '../components/icons/att-icon';
-import { QualtricsIcon } from '../components/icons/qualtrics-icon';
-import { SymetraIcon } from '../components/icons/symetra-icon';
-import { WorkosIcon } from '../components/icons/workos-icon';
 import { NewLine } from '../components/new-line';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';

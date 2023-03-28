@@ -6,9 +6,12 @@ import {
 } from '@radix-ui/react-icons';
 import { FC } from 'react';
 
-interface TitleProps {}
+interface TitleProps {
+  title: string;
+  description: string;
+}
 
-export const Title: FC<Readonly<TitleProps>> = () => {
+export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
   const logoClassName =
     'h-8 w-8 text-lightmode-logo dark:text-darkmode-text-logo hover:text-lightmode-logo-hover hover:dark:text-darkmode-logo-hover transition duration-200';
 
@@ -17,7 +20,7 @@ export const Title: FC<Readonly<TitleProps>> = () => {
       <h1
         className={`font-semibold bg-[length:200%] animate-gradient bg-clip-text text-transparent text-7xl max-thin:text-6xl bg-gradient-to-r from-gradient-lightmode-from via-gradient-lightmode-to to-gradient-lightmode-from dark:from-gradient-darkmode-from dark:via-gradient-darkmode-to dark:to-gradient-darkmode-from`}
       >
-        Dane Williams
+        {title}
       </h1>
       <div className={`flex flex-col gap-2 text-xl max-thin:text-base`}>
         <p className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
@@ -31,7 +34,7 @@ export const Title: FC<Readonly<TitleProps>> = () => {
             WorkOS
           </a>
         </p>
-        <p>lorem ipsum dolor sit amet consectatur apidiscing</p>
+        <p>{description}</p>
       </div>
       <div className="flex gap-12 max-thin:gap-8">
         <a

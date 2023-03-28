@@ -2,7 +2,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Title } from '../components/title';
 
-const Home: NextPage = () => {
+interface HomeProps {
+  title: string;
+  description: string;
+}
+
+const Home: NextPage<HomeProps> = ({ title, description }) => {
   return (
     <>
       <Head>
@@ -26,10 +31,19 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
       <div className="flex flex-grow items-center">
-        <Title />
+        <Title title={title} description={description} />
       </div>
     </>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'Dane Williams',
+      description: 'lorem ipsum dolor sit amet consectatur apidiscing',
+    },
+  };
+}
 
 export default Home;
