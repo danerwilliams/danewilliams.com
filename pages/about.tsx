@@ -24,6 +24,12 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
           title,
           description,
           url: 'https://danewilliams.dev/about',
+          images: [
+            {
+              url: 'https://danewilliams.dev/static/images/social/about.jpeg',
+              type: 'image/jpeg',
+            },
+          ],
         }}
       />
       <Page>
