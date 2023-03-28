@@ -5,7 +5,7 @@ import {
   getArticleBySlug,
 } from '../lib/journal';
 import { Article as ArticleMetadata } from '../lib/journal';
-import { ArticleJsonLd } from 'next-seo';
+import { ArticleJsonLd, NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { CalendarIcon } from '@radix-ui/react-icons';
 import { Page } from '../components/page';
@@ -24,14 +24,15 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta content={title} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content={url} property="og:url" />
-      </Head>
-
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={{
+          title,
+          description,
+          url,
+        }}
+      />
       <ArticleJsonLd
         authorName="Dane Williams"
         type="Blog"
