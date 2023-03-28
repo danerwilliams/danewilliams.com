@@ -90,7 +90,7 @@ const MobileNavDrawer: FC<Readonly<MobileNavDrawerProps>> = ({
         <div className="relative z-30">
           <DropdownMenu.Root onOpenChange={setIsOpen}>
             <DropdownMenu.Trigger asChild>
-              <button className="mr-4">
+              <button aria-label="Menu" className="mr-4">
                 <motion.div animate={{ rotate: isOpen ? -45 : 0 }}>
                   <PlusIcon className="h-10 w-10 stroke-2" />
                 </motion.div>

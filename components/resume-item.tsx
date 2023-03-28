@@ -47,6 +47,7 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
           href={link}
           target="_blank"
           rel="noreferrer"
+          aria-label={`Go to the external page for ${company}`}
         >
           {company}
         </a>
