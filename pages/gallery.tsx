@@ -28,7 +28,7 @@ const Gallery: NextPage<GalleryProps> = ({
         title={title}
         description={description}
         openGraph={{
-          title,
+          title: `${title} | Dane Williams`,
           description,
           url: 'https://danewilliams.dev/gallery',
           images: [
@@ -81,7 +81,7 @@ export async function getStaticProps() {
   return {
     props: {
       galleryImages: GalleryImages,
-      title: 'Gallery | Dane Williams',
+      title: 'Gallery',
       description: 'slkdfj sdklfj sdfljk sdfklj sdlfjk sdljkf',
     },
   };

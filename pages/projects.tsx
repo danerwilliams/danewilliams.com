@@ -29,7 +29,7 @@ const Projects: NextPage<ProjectsProps> = ({
         title={title}
         description={description}
         openGraph={{
-          title,
+          title: `${title} | Dane Williams`,
           description,
           url: 'https://danewilliams.dev/projects',
           images: [
@@ -92,7 +92,7 @@ export async function getStaticProps() {
           new Date(a.date).getMilliseconds() -
           new Date(b.date).getMilliseconds(),
       ),
-      title: 'Projects | Dane Williams',
+      title: 'Projects',
       description: 'sldkjfsld sdlfjks dfljksdf sdfkljsd.',
     },
   };

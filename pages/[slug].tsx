@@ -25,7 +25,7 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
   return (
     <>
       <NextSeo
-        title={title}
+        title={article.title}
         description={description}
         openGraph={{
           title,

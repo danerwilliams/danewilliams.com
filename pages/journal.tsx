@@ -38,7 +38,7 @@ const Journal: NextPage<JournalProps> = ({ articles, title, description }) => {
         title={title}
         description={description}
         openGraph={{
-          title,
+          title: `${title} | Dane Williams`,
           description,
           url: 'https://danewilliams.dev/journal',
           images: [
@@ -92,7 +92,7 @@ export async function getStaticProps() {
   return {
     props: {
       articles,
-      title: 'Journal | Dane Williams',
+      title: 'Journal',
       description: 'lskdf sldkfj sdlfjk sdlfjk sdfljksdlfjk .',
     },
   };
