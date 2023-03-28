@@ -1,5 +1,6 @@
 import { EyeOpenIcon, PersonIcon, StarIcon } from '@radix-ui/react-icons';
 import type { NextPage } from 'next';
+import { NextSeo } from 'next-seo';
 import { HighlightedProject } from '../components/highlighted-project';
 import { Page } from '../components/page';
 import { PageHeader } from '../components/page-header';
@@ -13,61 +14,80 @@ interface ProjectsProps {
     TimelineProjectProps,
     'isRight' | 'isFirst' | 'isLast' | 'newYear'
   > & { date: string })[];
+  title: string;
+  description: string;
 }
 
-const Projects: NextPage<ProjectsProps> = ({ timelineProjects }) => {
+const Projects: NextPage<ProjectsProps> = ({
+  timelineProjects,
+  title,
+  description,
+}) => {
   return (
-    <Page>
-      <PageHeader question="What have I built?" />
-      <div className="mt-8">
-        <p>
-          Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet
-          justo.
-        </p>
-        <div className="flex flex-row max-[576px]:flex-col gap-6 mt-8">
-          <div className="flex w-full">
-            <HighlightedProject
-              name="New Grad Positions"
-              url="https://github.com/coderQuad/New-Grad-Positions-2023"
-              description="A collection of computer science jobs for new college graduates"
-              stats={[
-                { icon: <StarIcon />, label: '5k+ Stars' },
-                { icon: <EyeOpenIcon />, label: '10k+ Visits/Day' },
-              ]}
-            />
-          </div>
-          <div className="flex w-full">
-            <HighlightedProject
-              name="Dracula Tmux"
-              url="https://github.com/dracula/tmux"
-              description="Official Dracula Theme extension for Tmux"
-              stats={[
-                { icon: <StarIcon />, label: '400+ Stars' },
-                { icon: <PersonIcon />, label: '20+ Contributors' },
-              ]}
-            />
-          </div>
-        </div>
+    <>
+      <NextSeo
+        title={title}
+        description={description}
+        openGraph={{
+          title,
+          description,
+          url: 'https://danewilliams.dev/projects',
+        }}
+      />
+      <Page>
+        <PageHeader question="What have I built?" />
         <div className="mt-8">
-          <SectionHeader text="Timeline" />
+          <p>
+            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Sit amet dictum sit
+            amet justo.
+          </p>
+          <div className="flex flex-row max-[576px]:flex-col gap-6 mt-8">
+            <div className="flex w-full">
+              <HighlightedProject
+                name="New Grad Positions"
+                url="https://github.com/coderQuad/New-Grad-Positions-2023"
+                description="A collection of computer science jobs for new college graduates"
+                stats={[
+                  { icon: <StarIcon />, label: '5k+ Stars' },
+                  { icon: <EyeOpenIcon />, label: '10k+ Visits/Day' },
+                ]}
+              />
+            </div>
+            <div className="flex w-full">
+              <HighlightedProject
+                name="Dracula Tmux"
+                url="https://github.com/dracula/tmux"
+                description="Official Dracula Theme extension for Tmux"
+                stats={[
+                  { icon: <StarIcon />, label: '400+ Stars' },
+                  { icon: <PersonIcon />, label: '20+ Contributors' },
+                ]}
+              />
+            </div>
+          </div>
           <div className="mt-8">
-            <Timeline projects={timelineProjects} />
+            <SectionHeader text="Timeline" />
+            <div className="mt-8">
+              <Timeline projects={timelineProjects} />
+            </div>
           </div>
         </div>
-      </div>
-    </Page>
+      </Page>
+    </>
   );
 };
 
 export async function getStaticProps() {
   return {
     props: {
-      timelineProjects: TimelineProjects.sort(
+      timelineProjects: TimelineProjects.slice().sort(
         (a, b) =>
           new Date(a.date).getMilliseconds() -
           new Date(b.date).getMilliseconds(),
       ),
+      title: 'Projects | Dane Williams',
+      description: 'sldkjfsld sdlfjks dfljksdf sdfkljsd.',
     },
   };
 }
