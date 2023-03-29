@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           titleTemplate="%s | Dane Williams"
           defaultTitle="Dane Williams"
           description={description}
+          themeColor="#151718"
           canonical="https://danewilliams.dev"
           openGraph={{
             title: 'Dane Williams',
@@ -25,26 +26,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           }}
           twitter={{
             handle: '@danerwilliams',
+            cardType: 'summary_large_image',
           }}
           additionalLinkTags={[
-            { rel: 'manifest', href: '/favicon/site.webmanifest' },
-            {
-              rel: 'apple-touch-icon',
-              type: 'image/png',
-              sizes: '180x180',
-              href: '/favicon/apple-touch-icon.png',
-            },
             {
               rel: 'icon',
-              type: 'image/png',
-              sizes: '32x32',
-              href: '/favicon/favicon-32x32.png',
-            },
-            {
-              rel: 'icon',
-              type: 'image/png',
-              sizes: '16x16',
-              href: '/favicon/favicon-16x16.png',
+              href: '/favicon.svg',
+              type: 'image/svg+xml',
+              sizes: 'any',
             },
           ]}
         />
@@ -53,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="Dane Williams"
           url="https://danewilliams.dev"
           sameAs={[
-            'https://www.linkedin.com/in/danerwilliams',
+            'https://linkedin.com/in/danerwilliams',
             'https://twitter.com/danerwilliams',
             'https://github.com/danerwilliams',
             'https://instagram.com/_dane_williams',
