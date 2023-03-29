@@ -45,29 +45,37 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
             />
             <p>
               Hey 👋
-              <NewLine />I{"'"}m Dane Williams, a full stack software engineer
-              based out of
+              <NewLine />
+              I’m Dane Williams, a full stack product engineer based out of
               <span className="ml-2 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
-                🍕 New York City
+                New York City
               </span>
-              .
+              . 🍕
               <NewLine />
               In the past I lived in <PreviousCities />
               <NewLine />
-              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Sit amet dictum sit
-              amet justo. Magna fermentum iaculis eu non diam phasellus
-              vestibulum lorem. Turpis massa sed elementum tempus egestas sed
-              sed risus. Nunc sed blandit libero volutpat sed cras ornare arcu.
-              Dolor sit amet consectetur adipiscing elit duis. Rhoncus dolor
-              purus non enim praesent elementum. Elementum curabitur vitae nunc
-              sed velit. In mollis nunc sed id semper risus. Urna cursus eget
-              nunc scelerisque. Quisque sagittis purus sit amet volutpat
-              consequat mauris nunc congue. Rhoncus mattis rhoncus urna neque
-              viverra justo. Sed vulputate mi sit amet mauris commodo. At
-              consectetur lorem donec massa sapien faucibus. Non curabitur
-              gravida arcu ac. Mauris ultrices eros in cursus turpis. Lacus
-              vestibulum sed
+              During football season you can find me cheering on the Seahawks as
+              well as my alma mater,{' '}
+              <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
+                Notre Dame
+              </span>
+              . When I was a student at Notre Dame I lived in Fisher Hall and
+              played on the water polo team. Go Irish! ☘️
+              <NewLine />I am a{' '}
+              <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
+                generalist
+              </span>{' '}
+              who enjoys working across the entire stack. 👨‍💻
+              <NewLine />
+              My experience is primarily in JavaScript and TypeScript, although
+              I also have worked with Python, C, and more. I enjoy modern web
+              technologies such as React, Node, Postgres, GraphQL, etcetera, but
+              believe in using whatever tool will aid in delivering an awesome
+              experience to customers. 🤙
+              <NewLine />
+              In addition to my technical skills I take pride in my ability to
+              wear many hats. I love talking to customers, PM’ing, designing,
+              and documenting in order to ship a project from end to end. 🚀
             </p>
           </div>
         </div>
@@ -127,7 +135,7 @@ export async function getStaticProps() {
     props: {
       resumeItems,
       description:
-        'Dane Williams is a software engineer in New York City. Dane graduated from Notre Dame Computer Science and has worked at WorkOS, Qualtrics and more.',
+        'I’m Dane Williams, a software engineer based out of New York City. I graduated from Notre Dame Computer Science and have worked at WorkOS, Qualtrics and others.',
       title: 'About',
     },
   };
