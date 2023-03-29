@@ -1,5 +1,12 @@
 # https://www.youtube.com/watch?v=IBZp_duus_8
 
+# *
 User-agent: *
+Allow: /
 
-Sitemap: https://danewilliams.me/index.xml
+# Host
+Host: https://danewilliams.dev
+
+# Sitemaps
+Sitemap: https://danewilliams.dev/sitemap.xml
+Sitemap: https://danewilliams.dev/sitemap-0.xml
