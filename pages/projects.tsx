@@ -43,11 +43,7 @@ const Projects: NextPage<ProjectsProps> = ({
       <Page>
         <PageHeader question="What have I built?" />
         <div className="mt-8">
-          <p>
-            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Sit amet dictum sit
-            amet justo.
-          </p>
+          <p>{description}</p>
           <div className="flex flex-row max-[576px]:flex-col gap-6 mt-8">
             <div className="flex w-full">
               <HighlightedProject
@@ -93,7 +89,8 @@ export async function getStaticProps() {
           new Date(b.date).getMilliseconds(),
       ),
       title: 'Projects',
-      description: 'sldkjfsld sdlfjks dfljksdf sdfkljsd.',
+      description:
+        'I’ve worked on many projects on my own time and for work. Some of these projects are still active and others I no longer work on.',
     },
   };
 }

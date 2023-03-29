@@ -43,9 +43,7 @@ const Gallery: NextPage<GalleryProps> = ({
         <PageHeader question="How am I doing?" />
         <div className="mt-8">
           <p>
-            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Sit amet dictum sit
-            amet justo.
+            {description} My goal is for this gallery to continue to grow :-D
           </p>
         </div>
         <div className="mt-8">
@@ -82,7 +80,8 @@ export async function getStaticProps() {
     props: {
       galleryImages: GalleryImages,
       title: 'Gallery',
-      description: 'slkdfj sdklfj sdfljk sdfklj sdlfjk sdljkf',
+      description:
+        'Here are some of the people I’ve gotten to meet and some of the places I’ve been lately.',
     },
   };
 }

@@ -52,11 +52,7 @@ const Journal: NextPage<JournalProps> = ({ articles, title, description }) => {
       <Page>
         <PageHeader question="What do I think?" />
         <div className="mt-8">
-          <p>
-            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Sit amet dictum sit
-            amet justo.
-          </p>
+          <p>{description} Writing effort varies.</p>
           <div className="flex relative h-14 mt-8 items-center w-full">
             <div className="absolute pl-4">
               <MagnifyingGlassIcon className="h-6 w-6" />
@@ -93,7 +89,8 @@ export async function getStaticProps() {
     props: {
       articles,
       title: 'Journal',
-      description: 'lskdf sldkfj sdlfjk sdlfjk sdfljksdlfjk .',
+      description:
+        'Here is some of my writing. I try to occasionally write brief memos with updates on major things happening in my life and career, among other topics.',
     },
   };
 }
