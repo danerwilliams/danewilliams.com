@@ -8,14 +8,15 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({ title, description }) => {
+  const seoDescription = `Dane Williams is a software engineer in New York City ${description.toLowerCase()}.`;
   return (
     <>
       <NextSeo
         title={title}
-        description={description}
+        description={seoDescription}
         openGraph={{
           title,
-          description,
+          description: seoDescription,
           url: 'https://danewilliams.dev',
           images: [
             {
@@ -37,7 +38,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Dane Williams',
-      description: 'lorem ipsum dolor sit amet consectatur apidiscing',
+      description: 'Building awesome software experiences',
     },
   };
 }

@@ -127,7 +127,8 @@ export async function getStaticProps() {
     props: {
       resumeItems,
       title: 'About | Dane Williams',
-      description: 'lorem ipsum slkjdfskljdf sldkfjs',
+      description:
+        'Dane Williams is a software engineer in New York City. Dane graduated from Notre Dame Computer Science and has worked at WorkOS, Qualtrics and more.',
     },
   };
 }
