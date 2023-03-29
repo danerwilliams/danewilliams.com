@@ -8,4 +8,5 @@ Allow: /
 Host: https://danewilliams.dev
 
 # Sitemaps
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://danewilliams.dev/sitemap.xml
+Sitemap: https://danewilliams.dev/sitemap-0.xml
