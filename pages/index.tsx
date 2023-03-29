@@ -12,7 +12,6 @@ const Home: NextPage<HomeProps> = ({ title, description }) => {
   return (
     <>
       <NextSeo
-        title={title}
         description={seoDescription}
         openGraph={{
           title,

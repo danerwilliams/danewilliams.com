@@ -21,7 +21,7 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
         title={title}
         description={description}
         openGraph={{
-          title,
+          title: `${title} | Dane Williams`,
           description,
           url: 'https://danewilliams.dev/about',
           images: [
@@ -126,9 +126,9 @@ export async function getStaticProps() {
   return {
     props: {
       resumeItems,
-      title: 'About | Dane Williams',
       description:
         'Dane Williams is a software engineer in New York City. Dane graduated from Notre Dame Computer Science and has worked at WorkOS, Qualtrics and more.',
+      title: 'About',
     },
   };
 }
