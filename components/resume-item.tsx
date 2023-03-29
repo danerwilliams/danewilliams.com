@@ -58,11 +58,13 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
       ).toLocaleString('en-US', {
         year: 'numeric',
         month: 'long',
+        timeZone: 'UTC',
       })} - ${
         endDate
           ? new Date(endDate).toLocaleString('en-US', {
               year: 'numeric',
               month: 'long',
+              timeZone: 'UTC',
             })
           : 'Present'
       }`}</div>
