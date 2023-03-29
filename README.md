@@ -1,4 +1,4 @@
-# danewilliams.me
+# danewilliams.dev
 
 > My personal website: [danewilliams.dev](https://danewilliams.dev)
 
