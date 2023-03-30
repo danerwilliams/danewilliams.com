@@ -21,7 +21,8 @@ export const TimelineProjects: (Omit<
     organization: 'workos',
     description:
       'Architected and developed a series of improvements to the WorkOS Admin Portal navigation.',
-    secondaryDescription: 'Collaborated with another engineer and a designer.',
+    secondaryDescription:
+      'Simplified flows for customers and unblocked other Admin Portal feature work.',
   },
   {
     name: 'Self Serve Slack',
@@ -29,8 +30,7 @@ export const TimelineProjects: (Omit<
     date: new Date('2023-01-13').toISOString(),
     organization: 'workos',
     description:
-      'Built the backend services to allow customers to create shared Slack channels with WorkOS customer support within the dashboard.',
-    secondaryDescription: 'Collaborated with a frontend engineer and designer.',
+      'Built the backend services to allow customers to create shared Slack channels with WorkOS customer support within the Dashboard.',
   },
   {
     name: 'Admin Portal Branding',
@@ -38,9 +38,9 @@ export const TimelineProjects: (Omit<
     date: new Date('2022-12-05').toISOString(),
     organization: 'workos',
     description:
-      'Designed and built a feature that allows customers to add custom branding to the Admin Portal from the WorkOS dashboard.',
+      'Designed and built a feature that allows customers to add custom branding to the Admin Portal from the WorkOS Dashboard.',
     secondaryDescription:
-      'Collaborated with another engineer to deliver the project end to end.',
+      'Presented feature in the WorkOS quarterly customer event.',
   },
   {
     name: 'Admin Portal Feedback',
@@ -49,17 +49,31 @@ export const TimelineProjects: (Omit<
     organization: 'workos',
     description:
       'Added the ability to provide feedback from the Admin Portal to the WorkOS team.',
-    secondaryDescription:
-      "PM'd, architected, and built the project end to end.",
+    secondaryDescription: 'Instrumented Segment to collect data.',
+  },
+  {
+    name: 'SAML Signing Certificate Docs',
+    url: 'https://workos.com/docs/sso/signing-certificates',
+    date: new Date('2022-09-01').toISOString(),
+    organization: 'workos',
+    description:
+      'Wrote public documentation about SAML signing certificates for WorkOS customers.',
+  },
+  {
+    name: 'Dashboard SCIM',
+    date: new Date('2022-06-01').toISOString(),
+    organization: 'workos',
+    description:
+      'Dog fooded the WorkOS Directory Sync product in our Dashboard to provide SCIM / HRIS support to WorkOS customers.',
   },
   {
     name: 'Customer Slack Bot',
     organization: 'workos',
     date: new Date('2022-03-01').toISOString(),
     description:
-      'Refactored existing Slack code and built new Slack instrumentation to push various alerts to hundreds of customers in shared Slack channels.',
+      'Refactored existing Slack code and built new Slack instrumentation.',
     secondaryDescription:
-      "Wrote all of the code. Co-architected and PM'd the project with a mentoring engineer.",
+      'Service is now used to push various alerts to hundreds of customers in shared Slack channels.',
   },
   {
     name: 'Hierarchical Sankey',
@@ -76,9 +90,7 @@ export const TimelineProjects: (Omit<
     organization: 'qualtrics',
     date: new Date('2021-08-01').toISOString(),
     description:
-      'Built a feature for the Frontline Feedback product that automatically syncs data from external platforms such as Salesforce into Qualtrics facing thousands of customers.',
-    secondaryDescription:
-      'Wrote code and design documents under guidance of a mentor.',
+      'Built a feature for the Frontline Feedback product that automatically syncs data from external platforms such as Salesforce into Qualtrics.',
   },
   {
     name: 'playruski.com',
