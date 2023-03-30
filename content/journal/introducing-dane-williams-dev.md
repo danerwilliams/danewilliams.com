@@ -1,6 +1,6 @@
 ---
 title: 'Introducing danewilliams.dev'
-description: 'Welcome to my blog! I plan to use this site to share my projects and code with the world, and may occasionally speak to other interests of mine. I am currently a CS student at Notre Dame, and you can learn more about me by checking out my about page.'
+description: 'Welcome to my new personal site, danewilliams.dev! I decided to build this for a few reasons. I have been doing more frontend at work recently and felt it would be good practice. I wanted to try designing something cool.'
 date: '2023-01-23'
 ---
 
