@@ -49,7 +49,7 @@ const Projects: NextPage<ProjectsProps> = ({
               <HighlightedProject
                 name="New Grad Positions"
                 url="https://github.com/coderQuad/New-Grad-Positions-2023"
-                description="A collection of computer science jobs for new college graduates"
+                description="A collection of computer science jobs for new college graduates. Acquired by Simplify."
                 stats={[
                   { icon: <StarIcon />, label: '5k+ Stars' },
                   { icon: <EyeOpenIcon />, label: '10k+ Visits/Day' },
