@@ -29,7 +29,7 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
   newYear,
 }) => {
   return (
-    <div className="flex flex-col w-full mt-5">
+    <div className="flex flex-col w-full mt-10 lg:mt-8">
       {isFirst && (
         <div
           className={`relative flex w-[calc(50%+2px)] h-8 border-r-4 border-lightmode-border dark:border-darkmode-border`}
@@ -56,8 +56,9 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
             secondaryDescription={secondaryDescription}
           />
         </div>
+        {/* -mt-3 controls the vertical position of the div creating the timeline, corresponds with the offset of mt-8 in the outer div in terms of its distance from mt-5 */}
         <div
-          className={`relative flex grow border-b-2 ${
+          className={`relative flex grow -mt-5 lg:-mt-3 border-b-2 ${
             isRight ? 'border-l-4 mr-2' : 'border-r-4 ml-2'
           } border-lightmode-border dark:border-darkmode-border`}
         >
