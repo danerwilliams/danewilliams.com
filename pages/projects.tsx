@@ -48,7 +48,7 @@ const Projects: NextPage<ProjectsProps> = ({
             <div className="flex w-full">
               <HighlightedProject
                 name="New Grad Positions"
-                url="https://github.com/coderQuad/New-Grad-Positions-2023"
+                url="https://github.com/SimplifyJobs/New-Grad-Positions"
                 description="A collection of computer science jobs for new college graduates. Acquired by Simplify."
                 stats={[
                   { icon: <StarIcon />, label: '5k+ Stars' },
@@ -90,7 +90,7 @@ export async function getStaticProps() {
       ),
       title: 'Projects',
       description:
-        'I’ve worked on many projects on my own time and for work. Some of these projects are still active and others I no longer work on.',
+        'I’ve worked on many projects on my own time and for work. Some of these projects are still active and others I no longer work on. This list is not exhaustive.',
     },
   };
 }

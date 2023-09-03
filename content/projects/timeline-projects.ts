@@ -1,10 +1,25 @@
-import { TimelineProps } from '../../components/timeline';
 import { TimelineProjectProps } from '../../components/timeline-project';
 
 export const TimelineProjects: (Omit<
   TimelineProjectProps,
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
+  {
+    name: 'Admin Portal Email Invitations',
+    url: 'https://workos.com/changelog/invite-admins-to-admin-portal-via-email',
+    date: new Date('2023-07-20').toISOString(),
+    organization: 'workos',
+    description:
+      'Allows for inviting 3rd party IT administrators to manage organizations in WorkOS.',
+  },
+  {
+    name: 'Streamlined Admin Portal Setup Links',
+    url: 'https://workos.com/changelog/streamlined-admin-portal-setup-links',
+    date: new Date('2023-05-22').toISOString(),
+    organization: 'workos',
+    description:
+      'Added support for setting up multiple features from a single link.',
+  },
   {
     name: 'danewilliams.dev',
     url: 'https://github.com/danerwilliams/danewilliams.dev',
