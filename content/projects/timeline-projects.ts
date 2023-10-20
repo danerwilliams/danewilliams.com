@@ -5,6 +5,14 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'Charcoal',
+    url: 'https://github.com/danerwilliams/charcoal',
+    date: new Date('2023-10-10').toISOString(),
+    organization: 'personal',
+    description: 'A CLI for stacking pull requests.',
+    secondaryDescription: 'Forked from Graphite.',
+  },
+  {
     name: 'Admin Portal Email Invitations',
     url: 'https://workos.com/changelog/invite-admins-to-admin-portal-via-email',
     date: new Date('2023-07-20').toISOString(),
