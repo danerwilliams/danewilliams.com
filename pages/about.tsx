@@ -46,32 +46,25 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
             <p>
               Hey 👋
               <NewLine />
-              I’m Dane Williams, a full stack product engineer based out of
+              I’m Dane Williams, a software engineer based out of
               <span className="ml-2 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
                 New York City
               </span>
-              . 🍕
+              . 🗽
               <NewLine />
-              In the past I lived in <PreviousCities />
+              In the past I’ve lived in <PreviousCities />
               <NewLine />
               During football season you can find me cheering on the Seahawks as
               well as my alma mater,{' '}
               <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
                 Notre Dame
               </span>
-              . When I was a student at Notre Dame I lived in Fisher Hall and
-              played on the water polo team. Go Irish! ☘️
-              <NewLine />I am a{' '}
-              <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
-                generalist
-              </span>{' '}
-              who enjoys working across the entire stack. 👨‍💻
-              <NewLine />
-              My experience is primarily in JavaScript and TypeScript, although
-              I also have worked with Python, C, and more. I enjoy modern web
-              technologies such as React, Node, Postgres, GraphQL, etcetera, but
-              believe in using whatever tool will aid in delivering an awesome
-              experience to customers. 🤙
+              . When I was a student I lived in Fisher Hall and played on the
+              water polo team. Go Irish! ☘️
+              <NewLine />I am a hacker, generalist, and product engineer. My
+              motivation is geared towards building things, so I enjoy working
+              across the entire stack using whatever tools and technologies it
+              takes to make something awesome. 🤙
               <NewLine />
               In addition to my technical skills I take pride in my ability to
               wear many hats. I love talking to customers, PM’ing, designing,
