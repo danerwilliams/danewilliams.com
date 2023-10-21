@@ -49,7 +49,7 @@ const Projects: NextPage<ProjectsProps> = ({
               <HighlightedProject
                 name="New Grad Positions"
                 url="https://github.com/SimplifyJobs/New-Grad-Positions"
-                description="A collection of computer science jobs for new college graduates. Acquired by Simplify."
+                description="A collection of computer science jobs for new college graduates"
                 stats={[
                   { icon: <StarIcon />, label: '5k+ Stars' },
                   { icon: <EyeOpenIcon />, label: '10k+ Visits/Day' },

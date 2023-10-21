@@ -134,7 +134,7 @@ export const TimelineProjectCard: FC<Readonly<TimelineProjectCardProps>> = ({
 }) => {
   return (
     <div
-      className={`flex border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
+      className={`flex flex-grow border rounded-lg border-lightmode-border dark:border-darkmode-border bg-lightmode-component dark:bg-darkmode-component hover:bg-lightmode-component-hover hover:dark:bg-darkmode-component-hover duration-200`}
     >
       <a
         href={url}
