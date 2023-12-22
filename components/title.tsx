@@ -22,7 +22,9 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
       >
         {title}
       </h1>
-      <div className={`flex flex-col text-xl max-thin:text-base`}>
+      <div
+        className={`flex flex-col text-xl max-thin:text-base text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast`}
+      >
         <p>{description}</p>
       </div>
       <div className="flex gap-12 max-thin:gap-8">
