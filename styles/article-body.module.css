@@ -1,12 +1,22 @@
 .article-body p,
 .article-body ul,
-.article-body ol,
-.article-body blockquote {
+.article-body ol {
+  @apply my-6;
+}
+
+.article-body li {
   @apply my-2;
 }
 
+.article-body blockquote {
+  @apply my-8 italic border-l-4 pl-6 border-lightmode-border-interactive;
+}
+:global(.dark) .article-body blockquote {
+  @apply border-darkmode-border-interactive;
+}
+
 .article-body {
-  @apply break-words;
+  @apply break-words leading-8;
 }
 
 .article-body code:not(code[class*='language-']) {
@@ -36,14 +46,14 @@
 }
 
 .article-body h2 {
-  @apply text-2xl mt-6 mb-3 text-lightmode-text-high-contrast;
+  @apply text-2xl mt-12 text-lightmode-text-high-contrast;
 }
 :global(.dark) .article-body h2 {
   @apply text-darkmode-text-high-contrast;
 }
 
 .article-body h3 {
-  @apply text-xl mt-4 mb-2 text-lightmode-text-high-contrast;
+  @apply text-xl mt-10 text-lightmode-text-high-contrast;
 }
 :global(.dark) .article-body h3 {
   @apply text-darkmode-text-high-contrast;
@@ -60,5 +70,14 @@
   @apply text-base mt-2 mb-1 text-lightmode-text-high-contrast;
 }
 :global(.dark) .article-body h5 h6 {
+  @apply text-darkmode-text-high-contrast;
+}
+
+.article-body b,
+.article-body strong {
+  @apply text-lightmode-text-high-contrast font-normal;
+}
+:global(.dark) .article-body b,
+:global(.dark) .article-body strong {
   @apply text-darkmode-text-high-contrast;
 }

@@ -94,6 +94,7 @@ export async function getStaticProps() {
       link: 'https://workos.com',
       location: 'New York, NY',
       startDate: new Date(2022, 0).toISOString(),
+      endDate: new Date(2023, 11).toISOString(),
     },
     {
       company: 'Qualtrics',

@@ -62,7 +62,7 @@ const Projects: NextPage<ProjectsProps> = ({
                 url="https://github.com/dracula/tmux"
                 description="Official Dracula Theme extension for Tmux"
                 stats={[
-                  { icon: <StarIcon />, label: '400+ Stars' },
+                  { icon: <StarIcon />, label: '500+ Stars' },
                   { icon: <PersonIcon />, label: '20+ Contributors' },
                 ]}
               />

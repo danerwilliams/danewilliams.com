@@ -13,7 +13,7 @@ interface TitleProps {
 
 export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
   const logoClassName =
-    'h-8 w-8 text-lightmode-logo dark:text-darkmode-text-logo hover:text-lightmode-logo-hover hover:dark:text-darkmode-logo-hover transition duration-200';
+    'h-8 w-8 text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200';
 
   return (
     <div className="flex flex-col grow gap-10 items-center text-center mb-24 max-sm:mb-12">
@@ -22,19 +22,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title, description }) => {
       >
         {title}
       </h1>
-      <div className={`flex flex-col gap-2 text-xl max-thin:text-base`}>
-        <p className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
-          Software Engineer at{' '}
-          <a
-            className="underline underline-offset-4 decoration-2 font-medium"
-            href="https://workos.com"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Go to the external page for WorkOS"
-          >
-            WorkOS
-          </a>
-        </p>
+      <div className={`flex flex-col text-xl max-thin:text-base`}>
         <p>{description}</p>
       </div>
       <div className="flex gap-12 max-thin:gap-8">

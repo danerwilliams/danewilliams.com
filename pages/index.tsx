@@ -37,7 +37,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Dane Williams',
-      description: 'Building awesome software products',
+      description: 'Hacking and building',
     },
   };
 }

@@ -33,6 +33,7 @@ export const Article: FC<Readonly<ArticleProps>> = ({
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </div>
               <div className="md:hidden">
@@ -40,6 +41,7 @@ export const Article: FC<Readonly<ArticleProps>> = ({
                   year: 'numeric',
                   month: 'numeric',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </div>
             </div>
