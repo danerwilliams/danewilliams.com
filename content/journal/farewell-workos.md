@@ -4,15 +4,9 @@ description: 'Adapted from LinkedIn. Today is very bittersweet as it is my final
 date: '2023-12-22'
 ---
 
-Adapted from [LinkedIn](https://www.linkedin.com/posts/danerwilliams_today-is-very-bittersweet-as-it-is-my-final-activity-7141456876898025472-U4EJ?utm_source=share&utm_medium=member_desktop).
+From [LinkedIn](https://www.linkedin.com/posts/danerwilliams_today-is-very-bittersweet-as-it-is-my-final-activity-7141456876898025472-U4EJ?utm_source=share&utm_medium=member_desktop):
 
-Today is very bittersweet as it is my final day at WorkOS.
-
-This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity.
-
-I truly believe I have worked with some of the most talented colleagues in the industry these past two years and hope to cross paths with you all again one day.
-It has been a distinct pleasure of mine to learn from such a remarkable group of people.
-I am incredibly thankful for each of you.
+> Today is very bittersweet as it is my final day at WorkOS. This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity. I truly believe I have worked with some of the most talented colleagues in the industry these past two years and hope to cross paths with you all again one day. It has been a distinct pleasure of mine to learn from such a remarkable group of people. I am incredibly thankful for each of you.
 
 ## How it all began
 
