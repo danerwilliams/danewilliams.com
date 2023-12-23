@@ -1,6 +1,6 @@
 ---
 title: 'Farewell, WorkOS'
-description: 'Adapted from LinkedIn. Today is very bittersweet as it is my final day at WorkOS. This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity.'
+description: 'From LinkedIn: Today is very bittersweet as it is my final day at WorkOS. This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity.'
 date: '2023-12-22'
 ---
 
@@ -140,7 +140,7 @@ I had great opportunities to embrace curiosity and be creative while working on 
 
 Every startup says you must understand users, and WorkOS is no exception.
 However, sometimes your users are challenging to learn about.
-Learning about Admin Portal users was no exception.
+Admin Portal users are a great example of this.
 
 For context, the Admin Portal is a product for configuring and maintaining enterprise features built with WorkOS.
 Our customers' customers use the Admin Portal, who are usually IT admins.
@@ -162,7 +162,7 @@ You'll be surprised by the results you might yield.
 ## What comes next
 
 Career discernment is an underrated aspect of a first job.
-I chose to work at a growth-stage startup right out of school because I knew I'd get broad exposure to the business, among other reasons.
+I chose to work at a growth-stage startup right out of school because I knew I'd get broad exposure to the business.
 
 While it would be foolish to think I know _what I want to do with my life_, I now have significantly more clarity.
 Most importantly, I know the next step I want to take in my journey.
