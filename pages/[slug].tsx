@@ -60,6 +60,7 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </div>
             </div>

@@ -5,11 +5,20 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'User Management / AuthKit',
+    url: 'https://workos.com/blog/introducing-authkit-and-user-management',
+    date: new Date('2023-11-28').toISOString(),
+    organization: 'workos',
+    description:
+      'The best fully managed authentication service for b2b apps in the world.',
+    secondaryDescription: 'A huge team effort :-D',
+  },
+  {
     name: 'Charcoal',
     url: 'https://github.com/danerwilliams/charcoal',
     date: new Date('2023-10-10').toISOString(),
     organization: 'personal',
-    description: 'A CLI for stacking pull requests.',
+    description: 'A CLI for stacking pull requests, integrated with Github.',
     secondaryDescription: 'Forked from Graphite.',
   },
   {
