@@ -28,9 +28,9 @@ export const Timeline: FC<Readonly<TimelineProps>> = ({ projects }) => {
                 index === projects.length - 1
                   ? undefined
                   : new Date(project.date).getFullYear() !==
-                    new Date(projects[index + 1]?.date).getFullYear()
-                  ? new Date(projects[index].date).getFullYear()
-                  : undefined
+                      new Date(projects[index + 1]?.date).getFullYear()
+                    ? new Date(projects[index].date).getFullYear()
+                    : undefined
               }
             />
           </div>
