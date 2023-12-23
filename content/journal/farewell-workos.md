@@ -32,6 +32,8 @@ Zeno introduced me to [Mark Tran](https://www.linkedin.com/in/marktran), WorkOS'
 A couple of months later, I finished our interview process, met many other team members, and signed my offer!
 By January 2022, I had finished at Notre Dame and began my full-time career as a software engineer!
 
+![Photo of my first all hands on Zoom](/static/journal/farewell-workos/first-all-hands.jpg)
+
 ## A few learnings
 
 Since then, it has been an incredible journey. I've learned more than I could possibly list here. Alas, here are a few takeaways I have:
@@ -160,6 +162,8 @@ We didn't have contact with Admin Portal users directly, so we had to get creati
 There may not always be a clear path given to you when solving a problem (such as learning about customers' customers).
 Embrace your curiosity and explore whatever leads you can come up with.
 You'll be surprised by the results you might yield.
+
+![Photo of the WorkOS team in Iceland](/static/journal/farewell-workos/iceland-group.jpg)
 
 ## What comes next
 
