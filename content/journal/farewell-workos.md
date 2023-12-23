@@ -1,6 +1,6 @@
 ---
 title: 'Farewell, WorkOS'
-description: 'Adapted from LinkedIn. Today is very bittersweet as it is my final day at WorkOS. This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity.'
+description: 'From LinkedIn: Today is very bittersweet as it is my final day at WorkOS. This is the company that took a chance hiring me when I was a new grad, and I could not be more grateful for the opportunity.'
 date: '2023-12-22'
 ---
 
