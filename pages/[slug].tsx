@@ -50,7 +50,7 @@ const Article: NextPage<ArticleProps> = ({ article, content }) => {
         description={description}
       />
       <Page>
-        <div className="flex flex-col md:max-w-[551.5px] lg:max-w-prose mt-8">
+        <div className="flex flex-col md:max-w-[551.5px] lg:max-w-full mt-8">
           <div className="flex flex-col text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
             <h1 className="text-3xl font-medium">{article.title}</h1>
             <div className="flex items-center text-lg mt-2">
