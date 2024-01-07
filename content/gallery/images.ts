@@ -2,6 +2,66 @@ import { GalleryImageProps } from '../../components/gallery-image';
 
 export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
   {
+    src: '/static/gallery/the-getty.jpeg',
+    height: 160,
+    caption: 'Los Angeles, CA',
+  },
+  {
+    src: '/static/gallery/clubhouse-sandos.jpeg',
+    height: 200,
+    caption: 'New York, NY',
+  },
+  {
+    src: '/static/gallery/bcst-reunion.jpeg',
+    height: 260,
+    caption: 'New York, NY',
+  },
+  {
+    src: '/static/gallery/hook-em.jpeg',
+    height: 240,
+    caption: 'Austin, TX',
+  },
+  {
+    src: '/static/gallery/carlsbad-strawberry-farm.jpeg',
+    height: 210,
+    caption: 'Carlsbad, CA',
+  },
+  {
+    src: '/static/gallery/temecula-winery.jpeg',
+    height: 240,
+    caption: 'Temecula, CA',
+  },
+  {
+    src: '/static/gallery/church-roof-party.jpeg',
+    height: 250,
+    caption: 'New York, NY',
+  },
+  {
+    src: '/static/gallery/island-creek.jpeg',
+    height: 200,
+    caption: 'Duxbury, MA',
+  },
+  {
+    src: '/static/gallery/wash-square-watermelon.jpeg',
+    height: 180,
+    caption: 'New York, NY',
+  },
+  {
+    src: '/static/gallery/porch-sea-girt.jpeg',
+    height: 220,
+    caption: 'Sea Girt, NJ',
+  },
+  {
+    src: '/static/gallery/iceland-lake.jpeg',
+    height: 240,
+    caption: 'Klausturholar, IS',
+  },
+  {
+    src: '/static/gallery/chicago-easter.jpeg',
+    height: 180,
+    caption: 'Chicago, IL',
+  },
+  {
     src: '/static/gallery/milk-jugs.jpeg',
     height: 220,
     caption: 'Newport Beach, CA',
