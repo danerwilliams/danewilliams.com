@@ -38,8 +38,8 @@ export const TimelineProjects: (Omit<
       'Added support for setting up multiple features from a single link.',
   },
   {
-    name: 'danewilliams.dev',
-    url: 'https://github.com/danerwilliams/danewilliams.dev',
+    name: 'danewilliams.com',
+    url: 'https://github.com/danerwilliams/danewilliams.com',
     date: new Date('2023-04-01').toISOString(),
     organization: 'personal',
     description: 'This website.',

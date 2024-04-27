@@ -1,10 +1,10 @@
 ---
-title: 'Introducing danewilliams.dev'
-description: 'Welcome to my new personal site, danewilliams.dev! I decided to build this for a few reasons. I have been doing more frontend at work recently and felt it would be good practice. I wanted to try designing something cool.'
+title: 'Introducing danewilliams.com'
+description: 'Welcome to my new personal site, danewilliams.com! I decided to build this for a few reasons. I have been doing more frontend at work recently and felt it would be good practice. I wanted to try designing something cool.'
 date: '2023-01-23'
 ---
 
-Welcome to my new personal site, [danewilliams.dev](https://danewilliams.dev)!
+Welcome to my new personal site, [danewilliams.com](https://danewilliams.com)!
 
 ### I decided to build this for a few reasons
 
