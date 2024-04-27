@@ -23,10 +23,10 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
         openGraph={{
           title: `${title} | Dane Williams`,
           description,
-          url: 'https://danewilliams.dev/about',
+          url: 'https://danewilliams.com/about',
           images: [
             {
-              url: 'https://danewilliams.dev/static/images/social/about.jpeg',
+              url: 'https://danewilliams.com/static/images/social/about.jpeg',
               type: 'image/jpeg',
             },
           ],

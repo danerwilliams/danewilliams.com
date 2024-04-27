@@ -15,12 +15,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           defaultTitle="Dane Williams"
           description={description}
           themeColor="#151718"
-          canonical="https://danewilliams.dev"
+          canonical="https://danewilliams.com"
           openGraph={{
             title: 'Dane Williams',
             type: 'website',
             locale: 'en_US',
-            url: 'https://danewilliams.dev',
+            url: 'https://danewilliams.com',
             siteName: 'Dane Williams',
             description,
           }}
@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <SocialProfileJsonLd
           type="Person"
           name="Dane Williams"
-          url="https://danewilliams.dev"
+          url="https://danewilliams.com"
           sameAs={[
             'https://linkedin.com/in/danerwilliams',
             'https://twitter.com/danerwilliams',

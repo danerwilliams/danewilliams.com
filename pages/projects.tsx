@@ -31,10 +31,10 @@ const Projects: NextPage<ProjectsProps> = ({
         openGraph={{
           title: `${title} | Dane Williams`,
           description,
-          url: 'https://danewilliams.dev/projects',
+          url: 'https://danewilliams.com/projects',
           images: [
             {
-              url: 'https://danewilliams.dev/static/images/social/projects.jpeg',
+              url: 'https://danewilliams.com/static/images/social/projects.jpeg',
               type: 'image/jpeg',
             },
           ],

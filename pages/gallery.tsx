@@ -30,10 +30,10 @@ const Gallery: NextPage<GalleryProps> = ({
         openGraph={{
           title: `${title} | Dane Williams`,
           description,
-          url: 'https://danewilliams.dev/gallery',
+          url: 'https://danewilliams.com/gallery',
           images: [
             {
-              url: 'https://danewilliams.dev/static/images/social/gallery.jpeg',
+              url: 'https://danewilliams.com/static/images/social/gallery.jpeg',
               type: 'image/jpeg',
             },
           ],

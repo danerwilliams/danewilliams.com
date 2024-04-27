@@ -16,10 +16,10 @@ const Home: NextPage<HomeProps> = ({ title, description }) => {
         openGraph={{
           title,
           description: seoDescription,
-          url: 'https://danewilliams.dev',
+          url: 'https://danewilliams.com',
           images: [
             {
-              url: 'https://danewilliams.dev/static/images/social/index.jpeg',
+              url: 'https://danewilliams.com/static/images/social/index.jpeg',
               type: 'image/jpeg',
             },
           ],
