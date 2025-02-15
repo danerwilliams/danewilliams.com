@@ -88,6 +88,14 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
 export async function getStaticProps() {
   const resumeItems: ResumeItemProps[] = [
     {
+      company: 'Cobblestone',
+      logo: 'cobblestone',
+      title: 'Engineering',
+      link: 'https://getcobblestone.com',
+      location: 'New York, NY',
+      startDate: new Date(2024, 0).toISOString(),
+    },
+    {
       company: 'WorkOS',
       logo: 'workos',
       title: 'Engineering',

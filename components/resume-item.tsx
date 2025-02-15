@@ -3,10 +3,11 @@ import { AttIcon } from './icons/att-icon';
 import { QualtricsIcon } from './icons/qualtrics-icon';
 import { SymetraIcon } from './icons/symetra-icon';
 import { WorkosIcon } from './icons/workos-icon';
+import { CobblestoneIcon } from './icons/cobblestone-icon';
 
 export interface ResumeItemProps {
   company: string;
-  logo: 'workos' | 'qualtrics' | 'att' | 'symetra';
+  logo: 'workos' | 'qualtrics' | 'att' | 'symetra' | 'cobblestone';
   title: string;
   link: string;
   location: string;
@@ -35,6 +36,8 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
             return <AttIcon />;
           case 'symetra':
             return <SymetraIcon />;
+          case 'cobblestone':
+            return <CobblestoneIcon />;
           default:
             return null;
         }
