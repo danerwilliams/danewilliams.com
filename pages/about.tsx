@@ -88,9 +88,17 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
 export async function getStaticProps() {
   const resumeItems: ResumeItemProps[] = [
     {
+      company: 'Cobblestone',
+      logo: 'cobblestone',
+      title: 'Engineering',
+      link: 'https://getcobblestone.com',
+      location: 'New York, NY',
+      startDate: new Date(2024, 0).toISOString(),
+    },
+    {
       company: 'WorkOS',
       logo: 'workos',
-      title: 'Software Engineer',
+      title: 'Engineering',
       link: 'https://workos.com',
       location: 'New York, NY',
       startDate: new Date(2022, 0).toISOString(),
@@ -99,7 +107,7 @@ export async function getStaticProps() {
     {
       company: 'Qualtrics',
       logo: 'qualtrics',
-      title: 'Software Engineer Intern',
+      title: 'Engineering',
       link: 'https://qualtrics.com',
       location: 'Seattle, WA',
       startDate: new Date(2021, 4).toISOString(),
@@ -108,7 +116,7 @@ export async function getStaticProps() {
     {
       company: 'AT&T Labs',
       logo: 'att',
-      title: 'Software Engineer Intern',
+      title: 'Engineering',
       link: 'https://about.att.com/sites/labs',
       location: 'San Ramon, CA',
       startDate: new Date(2020, 5).toISOString(),
@@ -117,7 +125,7 @@ export async function getStaticProps() {
     {
       company: 'Symetra',
       logo: 'symetra',
-      title: 'Cloud Engineer Intern',
+      title: 'Information Technology',
       link: 'https://symetra.com',
       location: 'Bellevue, WA',
       startDate: new Date(2019, 4).toISOString(),

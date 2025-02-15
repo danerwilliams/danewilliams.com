@@ -7,8 +7,9 @@ interface HomeProps {
   description: string;
 }
 
-const Home: NextPage<HomeProps> = ({ title, description }) => {
-  const seoDescription = `Dane Williams is a software engineer in New York City ${description.toLowerCase()}.`;
+const Home: NextPage<HomeProps> = ({ title }) => {
+  const seoDescription =
+    'Dane Williams is a software engineer in New York City';
   return (
     <>
       <NextSeo
@@ -27,7 +28,7 @@ const Home: NextPage<HomeProps> = ({ title, description }) => {
       />
 
       <div className="flex flex-grow items-center">
-        <Title title={title} description={description} />
+        <Title title={title} />
       </div>
     </>
   );
@@ -37,7 +38,6 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Dane Williams',
-      description: 'Hacking and building',
     },
   };
 }
