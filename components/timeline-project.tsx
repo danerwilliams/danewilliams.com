@@ -4,6 +4,8 @@ import { DaneIcon } from './icons/dane-icon';
 import { NdMonogramIcon } from './icons/nd-monogram-icon';
 import { QualtricsIcon } from './icons/qualtrics-icon';
 import { WorkosIconTrimmed } from './icons/workos-icon-trimmed';
+import { unreachable } from '../lib/unreachable';
+import { CobblestoneIcon } from './icons/cobblestone-icon';
 
 export interface TimelineProjectProps {
   name: string;
@@ -76,8 +78,11 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
                 case 'qualtrics':
                   return <QualtricsIcon className="h-6 w-6" />;
                 case 'personal':
-                default:
                   return <DaneIcon className="h-6 w-6" />;
+                case 'cobblestone':
+                  return <CobblestoneIcon className="h-6 w-6" />;
+                default:
+                  return unreachable(organization);
               }
             })()}
           </div>
