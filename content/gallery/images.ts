@@ -2,11 +2,6 @@ import { GalleryImageProps } from '../../components/gallery-image';
 
 export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
   {
-    src: '/static/gallery/the-getty.jpeg',
-    height: 160,
-    caption: 'Los Angeles, CA',
-  },
-  {
     src: '/static/gallery/clubhouse-sandos.jpeg',
     height: 200,
     caption: 'New York, NY',
@@ -15,21 +10,6 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     src: '/static/gallery/bcst-reunion.jpeg',
     height: 260,
     caption: 'New York, NY',
-  },
-  {
-    src: '/static/gallery/hook-em.jpeg',
-    height: 240,
-    caption: 'Austin, TX',
-  },
-  {
-    src: '/static/gallery/carlsbad-strawberry-farm.jpeg',
-    height: 210,
-    caption: 'Carlsbad, CA',
-  },
-  {
-    src: '/static/gallery/temecula-winery.jpeg',
-    height: 240,
-    caption: 'Temecula, CA',
   },
   {
     src: '/static/gallery/church-roof-party.jpeg',
@@ -152,11 +132,6 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     caption: 'Sea Girt, NJ',
   },
   {
-    src: '/static/gallery/san-onofre.jpeg',
-    height: 300,
-    caption: 'San Onofre, CA',
-  },
-  {
     src: '/static/gallery/coders-grad.jpeg',
     height: 240,
     caption: 'Notre Dame, IN',
@@ -192,11 +167,6 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     height: 140,
   },
   {
-    src: '/static/gallery/the-bean.jpeg',
-    height: 200,
-    caption: 'Chicago, IL',
-  },
-  {
     src: '/static/gallery/hot-dogs-plus.jpeg',
     height: 260,
     caption: 'Niles, MI',
@@ -207,24 +177,9 @@ export const GalleryImages: Omit<GalleryImageProps, 'onClick'>[] = [
     caption: 'St. Louis, MO',
   },
   {
-    src: '/static/gallery/mariners-game.jpeg',
-    height: 380,
-    caption: 'Seattle, WA',
-  },
-  {
-    src: '/static/gallery/yosemite-pano.jpeg',
-    height: 100,
-    caption: 'Yosemite, CA',
-  },
-  {
     src: '/static/gallery/love-creek.jpeg',
     height: 300,
     caption: 'Niles, MI',
-  },
-  {
-    src: '/static/gallery/nellie-portrait.jpeg',
-    height: 300,
-    caption: 'Pleasanton, CA',
   },
   {
     src: '/static/gallery/mega-table.jpeg',
