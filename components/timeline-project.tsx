@@ -9,7 +9,7 @@ export interface TimelineProjectProps {
   name: string;
   url?: string;
   description: string;
-  organization: 'personal' | 'workos' | 'qualtrics' | 'nd';
+  organization: 'personal' | 'workos' | 'qualtrics' | 'nd' | 'cobblestone';
   secondaryDescription?: string;
   isRight: boolean;
   isFirst: boolean;
