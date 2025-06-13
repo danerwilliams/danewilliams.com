@@ -50,7 +50,7 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
               <span className="ml-2 text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
                 New York City
               </span>
-              . 🗽
+              .
               <NewLine />
               In the past I’ve lived in <PreviousCities />
               <NewLine />
@@ -60,11 +60,14 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
                 Notre Dame
               </span>
               . When I was a student I lived in Fisher Hall and played on the
-              water polo team. Go Irish! ☘️
-              <NewLine />I am a hacker, generalist, and product engineer. My
-              motivation is geared towards building things, so I enjoy working
-              across the entire stack using whatever tools and technologies it
-              takes to make something awesome. 🤙
+              water polo team. Go Irish!
+              <NewLine />I am a{' '}
+              <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
+                hacker
+              </span>{' '}
+              who is motivated towards shipping outcomes, so I enjoy working
+              across the entire stack and using whatever tools it takes to build
+              something awesome.
               <NewLine />
               In addition to my technical skills I take pride in my ability to
               wear many hats. I love talking to customers, PM’ing, designing,
@@ -88,12 +91,21 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
 export async function getStaticProps() {
   const resumeItems: ResumeItemProps[] = [
     {
+      company: 'Clay',
+      logo: 'clay',
+      title: 'Engineering',
+      link: 'https://clay.com',
+      location: 'New York, NY',
+      startDate: new Date(2025, 5).toISOString(),
+    },
+    {
       company: 'Cobblestone',
       logo: 'cobblestone',
       title: 'Engineering',
       link: 'https://getcobblestone.com',
       location: 'New York, NY',
       startDate: new Date(2024, 0).toISOString(),
+      endDate: new Date(2025, 4).toISOString(),
     },
     {
       company: 'WorkOS',
@@ -137,7 +149,7 @@ export async function getStaticProps() {
     props: {
       resumeItems,
       description:
-        'I’m Dane Williams, a software engineer based out of New York City. I graduated from Notre Dame Computer Science and have worked at WorkOS, Qualtrics and others.',
+        'I’m Dane Williams, a software engineer based out of New York City. I graduated from Notre Dame Computer Science and have worked at Clay, WorkOS, and other companies big and small.',
       title: 'About',
     },
   };

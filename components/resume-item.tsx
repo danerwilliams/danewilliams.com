@@ -4,10 +4,11 @@ import { QualtricsIcon } from './icons/qualtrics-icon';
 import { SymetraIcon } from './icons/symetra-icon';
 import { WorkosIcon } from './icons/workos-icon';
 import { CobblestoneIcon } from './icons/cobblestone-icon';
+import { ClayIcon } from './icons/clay-icon';
 
 export interface ResumeItemProps {
   company: string;
-  logo: 'workos' | 'qualtrics' | 'att' | 'symetra' | 'cobblestone';
+  logo: 'workos' | 'qualtrics' | 'att' | 'symetra' | 'cobblestone' | 'clay';
   title: string;
   link: string;
   location: string;
@@ -38,6 +39,8 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
             return <SymetraIcon />;
           case 'cobblestone':
             return <CobblestoneIcon />;
+          case 'clay':
+            return <ClayIcon />;
           default:
             return null;
         }

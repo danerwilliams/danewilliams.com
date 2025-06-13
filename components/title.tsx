@@ -26,12 +26,12 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           Engineering at{' '}
           <a
             className="underline underline-offset-4 decoration-2 font-medium"
-            href="https://getcobblestone.com"
+            href="https://clay.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="Go to the external page for Cobblestone"
+            aria-label="Go to the external page for Clay"
           >
-            Cobblestone
+            Clay
           </a>
         </p>
       </div>
