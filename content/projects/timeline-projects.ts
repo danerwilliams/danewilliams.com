@@ -5,6 +5,15 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'Cobblestone',
+    url: 'https://getcobblestone.com',
+    date: new Date('2025-05-01').toISOString(),
+    organization: 'cobblestone',
+    description:
+      'An end to end tenant screening platform with $4M in funding from Y Combinator, a16z, Tishman Speyer (owner of Rockefeller center), and more.',
+    secondaryDescription: 'Shut down in May 2025.',
+  },
+  {
     name: 'User Management / AuthKit',
     url: 'https://workos.com/blog/introducing-authkit-and-user-management',
     date: new Date('2023-11-28').toISOString(),
