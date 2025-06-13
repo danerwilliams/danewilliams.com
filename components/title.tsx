@@ -5,6 +5,7 @@ import {
   TwitterLogoIcon,
 } from '@radix-ui/react-icons';
 import { FC } from 'react';
+import { XIcon } from './icons/x-icon';
 
 interface TitleProps {
   title: string;
@@ -50,7 +51,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           rel="noreferrer"
           aria-label="Go to Dane's Twitter profile"
         >
-          <TwitterLogoIcon className={logoClassName} />
+          <XIcon className={logoClassName} />
         </a>
         <a
           href="https://github.com/danerwilliams"
