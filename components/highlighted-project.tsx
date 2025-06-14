@@ -1,7 +1,11 @@
 import { FC, ReactNode } from 'react';
+import { unreachable } from '../lib/unreachable';
+import { EyeOpenIcon, PersonIcon, StarIcon } from '@radix-ui/react-icons';
+
+type HighlightedProjectIcon = 'star' | 'eye' | 'person';
 
 interface Stat {
-  icon: ReactNode;
+  icon: HighlightedProjectIcon;
   label: string;
 }
 
@@ -38,7 +42,7 @@ export const HighlightedProject: FC<Readonly<HighlightedProjectProps>> = ({
                 className="flex items-center gap-1 font-light lg:text-base text-sm"
                 key={stat.label}
               >
-                {stat.icon}
+                {getIcon(stat.icon)}
                 {stat.label}
               </div>
             ))}
@@ -47,4 +51,17 @@ export const HighlightedProject: FC<Readonly<HighlightedProjectProps>> = ({
       </div>
     </a>
   );
+};
+
+const getIcon = (name: HighlightedProjectIcon) => {
+  switch (name) {
+    case 'star':
+      return <StarIcon />;
+    case 'eye':
+      return <EyeOpenIcon />;
+    case 'person':
+      return <PersonIcon />;
+    default:
+      return unreachable(name);
+  }
 };
