@@ -1,4 +1,3 @@
-import { EyeOpenIcon, PersonIcon, StarIcon } from '@radix-ui/react-icons';
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import {
@@ -13,6 +12,7 @@ import { TimelineProjectProps } from '../components/timeline-project';
 import { TimelineProjects } from '../content/projects';
 import { getRoundedNumber } from '../lib/get-rounded-number';
 import { getGithubStars } from '../lib/get-github-stars';
+import { getGithubContributorsCount } from '../lib/get-github-contributors-count';
 
 interface ProjectsProps {
   timelineProjects: (Omit<
@@ -57,28 +57,6 @@ const Projects: NextPage<ProjectsProps> = ({
                 <HighlightedProject {...project} />
               </div>
             ))}
-            {/* <div className="flex w-full">
-              <HighlightedProject
-                name="New Grad Positions"
-                url="https://github.com/SimplifyJobs/New-Grad-Positions"
-                description="A collection of computer science jobs for new college graduates"
-                stats={[
-                  { icon: <StarIcon />, label: '5k+ Stars' },
-                  { icon: <EyeOpenIcon />, label: '10k+ Visits/Day' },
-                ]}
-              />
-            </div>
-            <div className="flex w-full">
-              <HighlightedProject
-                name="Dracula Tmux"
-                url="https://github.com/dracula/tmux"
-                description="Official Dracula Theme extension for Tmux"
-                stats={[
-                  { icon: <StarIcon />, label: '500+ Stars' },
-                  { icon: <PersonIcon />, label: '20+ Contributors' },
-                ]}
-              />
-            </div> */}
           </div>
           <div className="mt-8">
             <SectionHeader text="Timeline" />
@@ -99,6 +77,11 @@ export async function getStaticProps() {
   });
 
   const draculaTmuxStars = await getGithubStars({
+    owner: 'dracula',
+    repo: 'tmux',
+  });
+
+  const draculaTmuxContributorsCount = await getGithubContributorsCount({
     owner: 'dracula',
     repo: 'tmux',
   });
@@ -141,7 +124,9 @@ export async function getStaticProps() {
             },
             {
               icon: 'person',
-              label: '20+ Contributors',
+              label: `${getRoundedNumber(
+                draculaTmuxContributorsCount,
+              )} Contributors`,
             },
           ],
         },
