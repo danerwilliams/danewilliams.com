@@ -132,6 +132,7 @@ export async function getStaticProps() {
         },
       ],
     },
+    revalidate: 43200, // 12 hour TTL
   };
 }
 
