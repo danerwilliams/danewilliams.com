@@ -140,7 +140,7 @@ In the future I will be more mindful of drawing boundaries that help me maintain
 
 ## Final remarks
 
-When I joined Cobblestone, my goal was to learn as much as possible about building pre product market fit to prepare myself to become a founder myself one day.
+When I joined Cobblestone, my goal was to learn as much as possible about building pre product market fit to prepare myself to become a founder one day.
 Now that I've extracted many of those learnings, I most likely would not join a company as a founding engineer again.
 Next time I want to join a company as an original cofounder with larger equity upside and a board seat so that I can use what I learned at Cobblestone to build the company I always dreamed of being a part of.
 
