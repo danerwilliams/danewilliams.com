@@ -69,7 +69,7 @@ I hope to stay in touch with the entire Cobblestone team and can not wait for th
 
 Beyond that, I am so grateful for the support from my network after Cobblestone shut down.
 Colleagues from Cobblestone and WorkOS, investors, friends, and more were immensely generous in making introductions and lending advice as I navigated where to go next.
-I was truly blown away by the opportunities I got to consider from seed stage startups, AI research labs, FAANG companies, VCs and more.
+I was truly blown away by the opportunities I got to consider from startups, AI research labs, FAANG companies, VCs and more.
 None of that would have been possible without the network Cobblestone helped build.
 
 Working this hard on meaningful problems, grabbing daily team lunches, and having real conversations about personal and professional life are not things you do with mere colleagues, it's something you do with amazing friends.
@@ -97,7 +97,7 @@ Instead, we needed a product that created value for 1000s of real estate propert
 Startups that find really strong product market fit will ultimately feel the market pulling at them, the product should feel like it is selling itself.
 In our case we had to push Cobblestone to the market, and even then we still struggled to sell and deploy it at times.
 
-In the future I would intentionally try sell an incomplete product to see the market reacts, thus testing product market fit earlier.
+In the future I would intentionally try selling an incomplete product to see how the market reacts, thus testing product market fit earlier.
 Customers with a really deep pain point are often willing to pay for a partial resolution.
 Furthermore, by shipping earlier we can increase from n=5 to ideally n=100 or more early customers so that we are testing our product's fit against a more representative sample of the market and learning about a more diverse range of customer profiles.
 
