@@ -1,7 +1,7 @@
 ---
 title: 'Cobblestone retroactive'
 description: 'Several weeks ago, Cobblestone began the process of shutting down. I am beyond grateful to Jack, Jason, colleagues, investors, customers, friends, and everyone else who helped make the past year and a half possible.'
-date: '2025-06-15'
+date: '2025-06-21'
 ---
 
 Several weeks ago, Cobblestone began the process of shutting down.
@@ -40,11 +40,11 @@ However, living in the early stages opened my eyes to a speed of execution that 
 A great example of this is the number of times we SSH'd in to prod to fix bugs by directly updating our database.
 The first time I witnessed this happen I was in disbelief.
 At WorkOS or any other company I have worked at there would've been a highly regulated process of writing and reviewing a script to modify any production data.
-That is not a luxary we could afford though when we were putting out several fires per day during some of our early go lives.
+That is not a luxury we could afford though when we were putting out several fires per day during some of our early go lives.
 
 In many ways this is by design: after all, WorkOS has more to lose than Cobblestone by making a mistake.
 When I start a company in the future, I plan to push the same (or hopefully even faster) velocity as we did at Cobblestone.
-While working in larger companies, I plan to flex my scrappiness tastefully by developing an understanding of when velocity can or can not be increased.
+While working in larger companies, I plan to flex my scrappiness tastefully by developing an understanding of when velocity can or cannot be increased.
 
 #### Worked our butts off
 
@@ -65,7 +65,7 @@ That is just one example of our work ethic. The entire team spent many late nigh
 I spent many hours in the office with Jack and Jason ([Ariel](https://www.linkedin.com/in/ariel-langer-3bbb13152/), [Orestes](https://www.linkedin.com/in/orestes-kassian/), and [Glenn](https://www.linkedin.com/in/glennren/) too!), and am so grateful these incredible people are a part of my life.
 
 We are all quite different, but I certainly feel that this is the most authentic version of myself I have ever shared with my colleagues.
-I hope to stay in touch with the entire Cobblestone team and can not wait for the next opportunity to work with them again.
+I hope to stay in touch with the entire Cobblestone team and cannot wait for the next opportunity to work with them again.
 
 Beyond that, I am so grateful for the support from my network after Cobblestone shut down.
 Colleagues from Cobblestone and WorkOS, investors, friends, and more were immensely generous in making introductions and lending advice as I navigated where to go next.
@@ -107,7 +107,8 @@ We had a lot of amazing wins at Cobblestone: signing our first customer, winning
 These wins should be celebrated regularly.
 
 Working 6 days per week can either be a ton of fun or it can become a drag.
-The energy at Cobblestone HQ often felt lackluster, and I would rather the company I start in the future to be a true work hard play hard environment that leaves people itching to get out of bed every morning.
+At Cobblestone HQ we had a fun environment, but I think we could improve the energy even more.
+The company I start in the future will be a true work hard play hard environment that leaves people itching to get out of bed every morning.
 
 My vision is a team that rings a gong after closing every deal, pours a Guinness after shipping a new feature, and takes champagne showers after closing a new round of funding.
 Ultimately, I want myself and my colleagues showing up to the office every day not because they simply believe in hard work or discipline, but because it is truly the most exciting and energizing place to be in their lives.
@@ -145,4 +146,29 @@ Now that I've extracted many of those learnings, I most likely would not join a 
 Next time I want to join a company as an original cofounder with larger equity upside and a board seat so that I can use what I learned at Cobblestone to build the company I always dreamed of being a part of.
 
 In order to optimize for this, I decided to go somewhere that is already clearly feeling the pull of product market fit and has a highly entrepeneurial culture where I can meet my future cofounders.
-I think I found that place, it's called [Clay](https://clay.com) and I can't wait to get started. 🙂
+I think I found that place, it's called [Clay](https://clay.com) and week one was already a blast.
+There's a few reasons I think Clay is the perfect environment.
+
+#### Remarkable growth
+
+Clay is the hottest startup in NYC, and just several of the fastest growing startups in the entire world right now.
+I cannot share revenue metrics but they are absolutely wild, think a similar trajectory to [Ramp](https://ramp.com) in 2021.
+
+#### High leverage role
+
+I am working on growth engineering to start, which is an awesome place to be in a PLG business expanding as fast as Clay.
+Not only do I have an opportunity to directly improve our revenue trajectory, but I also get to work cross functionally with talented engineers across the entire company due to the nature of growth touching so much product surface area.
+
+#### Stay close to users
+
+Clay is small enough and the growth engineering role is aligned well enough that I can stay very close to users and continue developing a strong product sense.
+Much of my time will be spent talking to users, watching session replays, and analyzing usage metrics.
+
+#### Entrepreneurial culture
+
+An overwhelming number of Clay employees are former founders.
+Additionally, not a single Clay employee has quit in the past 4 years for any reason other than to start a new company.
+That speaks volumes to both the incredible place it is to work and the goals Clay employees have.
+A "Clay Mafia" is beginning to emerge, and I can't wait to be a part of it.
+
+If this is the type of environment you thrive in, drop me a line, [we're hiring](https://www.clay.com/careers). 🙂
