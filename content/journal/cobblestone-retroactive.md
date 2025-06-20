@@ -1,7 +1,7 @@
 ---
 title: 'Cobblestone retroactive'
 description: 'Several weeks ago, Cobblestone began the process of shutting down. I am beyond grateful to Jack, Jason, colleagues, investors, customers, friends, and everyone else who helped make the past year and a half possible.'
-date: '2025-06-21'
+date: '2025-06-20'
 ---
 
 Several weeks ago, Cobblestone began the process of shutting down.
@@ -11,8 +11,8 @@ While it certainly isn't the outcome anyone was hoping for, I truly believe this
 Cobblestone pushed me well beyond my previous limits in technical excellence, stress management, balancing personal relationships with work, pure hustle, and more.
 
 I constantly reflect on outcomes in my life to extract as much learning as possible, and Cobblestone is no exception.
-While I am writing this for my future self more than anything, if you are reading this I hope you find them helpful as well.
-Some of these learnings are mostly relevant to someone starting a company or working at an early stage startup, but many should be applicable to anyone looking to perform at their highest level in their personal and professional life.
+While I am writing this for my future self more than anything, if you are reading this I hope you find it helpful as well.
+Many of these learnings are most relevant to someone starting a company or working at an early stage startup, but they should be applicable to anyone looking to perform at their highest level in their personal and professional life.
 
 ## The good
 
@@ -24,16 +24,16 @@ We built some truly novel technology at Cobblestone.
 
 Our income verification was the best on the market.
 No other product could accurately detect pre tax income from low and high earners, and simultaneously support enough verification methods that 100% of users were expected to verify the authenticity of their claimed income.
-This took months of learning about new user personas, income types, verification methods, and more while also quickly implementing new features based on these learnings.
+This took months of learning about new user personas, income types, verification methods, and more while quickly implementing new features based on these learnings.
 
-We built the most advanced PMS integration in prop tech.
+We built the most advanced PMS (property management system) integration in prop tech.
 In order for a tenant screening platform to be truly end to end, we needed to sync all of Cobblestone's data back into our customers' PMS of choice.
 Many 3rd party PMS integrations are limited by incomplete public APIs.
-Cobblestone went the extra mile to build PMS integrations that went beyond what official public APIs could support (ask me more about this after I've had a couple of beers 🙃).
+Cobblestone built PMS integrations that went beyond what official public APIs could support (ask me more about this after I've had a couple of beers 🙃).
 
 #### Shipped at light speed
 
-My previous job was at top tier series B startup that shipped at 1/10 the speed of Cobblestone.
+My previous job was at a top tier series B startup that shipped at 1/10 the speed of Cobblestone.
 Before joining Cobblestone, I knew that building in the pre revenue phase requires a higher level of focus and intensity than the growth stage.
 However, living in the early stages opened my eyes to a speed of execution that I never had imagined.
 
@@ -137,7 +137,7 @@ Working hard on a startup enriches my life in and of itself.
 Cobblestone built meaningful relationships and memories in my life with colleagues, clients, investors, and more.
 
 However, there are also times where I neglected my life outside of work, damaging my personal relationships and well being as a result.
-In the future I will be more mindful of drawing boundaries that help me maintain a more sustainable work life balance.
+In the future I will be more mindful of drawing boundaries that help me maintain a more sustainable work life balance that promotes both my best work and personal life.
 
 ## Final remarks
 
@@ -151,7 +151,7 @@ There's a few reasons I think Clay is the perfect environment.
 
 #### Remarkable growth
 
-Clay is the hottest startup in NYC, and just several of the fastest growing startups in the entire world right now.
+Clay is the hottest startup in NYC, and among a few of the fastest growing startups in the entire world right now.
 I cannot share revenue metrics but they are absolutely wild, think a similar trajectory to [Ramp](https://ramp.com) in 2021.
 
 #### High leverage role
