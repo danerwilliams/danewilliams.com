@@ -65,13 +65,13 @@ const About: NextPage<AboutProps> = ({ resumeItems, title, description }) => {
               <span className="text-lightmode-text-high-contrast dark:text-darkmode-text-high-contrast">
                 hacker
               </span>{' '}
-              who is motivated towards shipping outcomes, so I enjoy working
+              who is motivated towards delivering commercial outcomes, so I enjoy working
               across the entire stack and using whatever tools it takes to build
               something awesome.
               <NewLine />
               In addition to my technical skills I take pride in my ability to
               wear many hats. I love talking to customers, PM’ing, designing,
-              and documenting in order to ship a project from end to end. 🚀
+              and documenting in order to ship a project from end to end. 🚢
             </p>
           </div>
         </div>
