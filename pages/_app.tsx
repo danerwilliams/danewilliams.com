@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app';
 import { Layout } from '../components/layout';
 import { ThemeProvider } from 'next-themes';
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const description = 'Dane Williams is a software engineer in New York City.';
@@ -50,6 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <Component {...pageProps} />
       </Layout>
+      <GoogleAnalytics gaId="G-LERH4LNWMR" />
     </ThemeProvider>
   );
 }
