@@ -6,6 +6,15 @@ const nextConfig = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  async redirects() {
+    return [
+      {
+        source: '/journal/cobblestone-retroactive',
+        destination: '/journal/cobblestone-retrospective',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
