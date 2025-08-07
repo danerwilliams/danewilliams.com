@@ -9,8 +9,8 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/journal/cobblestone-retroactive',
-        destination: '/journal/cobblestone-retrospective',
+        source: '/cobblestone-retroactive',
+        destination: '/cobblestone-retrospective',
         permanent: true,
       },
     ];
