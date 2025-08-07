@@ -1,5 +1,5 @@
 ---
-title: 'Cobblestone retroactive'
+title: 'Cobblestone retrospective'
 description: 'Several weeks ago, Cobblestone began the process of shutting down. I am beyond grateful to Jack, Jason, colleagues, investors, customers, friends, and everyone else who helped make the past year and a half possible.'
 date: '2025-06-20'
 ---
