@@ -1,19 +1,16 @@
-import {
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from '@radix-ui/react-icons';
 import { FC } from 'react';
 import { XIcon } from './icons/x-icon';
+import { MailIcon } from './icons/mail-icon';
+import { LinkedInIcon } from './icons/linkedin-icon';
+import { GitHubIcon } from './icons/github-icon';
 
 interface TitleProps {
   title: string;
 }
 
 export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
-  const logoClassName =
-    'h-8 w-8 text-lightmode-logo dark:text-darkmode-text-logo hover:text-lightmode-logo-hover hover:dark:text-darkmode-logo-hover transition duration-200';
+  const logoClassNameBase =
+    'h-10 w-10 text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200';
 
   return (
     <div className="flex flex-col grow gap-10 items-center text-center mb-24 max-sm:mb-12">
@@ -36,14 +33,14 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           </a>
         </p>
       </div>
-      <div className="flex gap-12 max-thin:gap-8">
+      <div className="flex gap-12 items-center max-thin:gap-8">
         <a
           href="https://linkedin.com/in/danerwilliams"
           target="_blank"
           rel="noreferrer"
           aria-label="Go to Dane's LinkedIn profile"
         >
-          <LinkedInLogoIcon className={logoClassName} />
+          <LinkedInIcon className={logoClassNameBase} />
         </a>
         <a
           href="https://x.com/danerwilliams"
@@ -51,7 +48,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           rel="noreferrer"
           aria-label="Go to Dane's X profile"
         >
-          <XIcon className={logoClassName} />
+          <XIcon className={logoClassNameBase} />
         </a>
         <a
           href="https://github.com/danerwilliams"
@@ -59,7 +56,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           rel="noreferrer"
           aria-label="Go to Dane's GitHub profile"
         >
-          <GitHubLogoIcon className={logoClassName} />
+          <GitHubIcon className={logoClassNameBase} />
         </a>
         <a
           href="mailto:hey@dane.to"
@@ -67,7 +64,7 @@ export const Title: FC<Readonly<TitleProps>> = ({ title }) => {
           rel="noreferrer"
           aria-label="Send an email to Dane"
         >
-          <EnvelopeClosedIcon className={logoClassName} />
+          <MailIcon className={logoClassNameBase} />
         </a>
       </div>
     </div>
