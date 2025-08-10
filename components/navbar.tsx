@@ -33,9 +33,6 @@ interface DesktopNavBarProps {
   currentPage: string;
 }
 
-export const NAV_TEXT_CLASSNAME =
-  'text-lightmode-text hover:text-lightmode-text-high-contrast dark:text-darkmode-text dark:hover:text-darkmode-text-high-contrast transition duration-200';
-
 const DesktopNavBar: FC<Readonly<DesktopNavBarProps>> = ({ currentPage }) => {
   return (
     <div className="flex font-heading items-center justify-between mt-4">
