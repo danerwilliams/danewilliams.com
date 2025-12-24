@@ -5,6 +5,15 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'Clay in ChatGPT',
+    url: 'https://www.linkedin.com/posts/grow-with-clay_big-news-clay-is-now-available-directly-activity-7407182915740147712-IPWr',
+    date: new Date('2025-12-17').toISOString(),
+    organization: 'clay',
+    description: "Clay's first tool for sales reps.",
+    secondaryDescription:
+      'Wrote a lot of code in a few weeks with some amazing people.',
+  },
+  {
     name: 'Cobblestone',
     url: 'https://getcobblestone.com',
     date: new Date('2025-05-01').toISOString(),
