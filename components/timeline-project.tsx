@@ -6,12 +6,19 @@ import { QualtricsIcon } from './icons/qualtrics-icon';
 import { WorkosIconTrimmed } from './icons/workos-icon-trimmed';
 import { unreachable } from '../lib/unreachable';
 import { CobblestoneIcon } from './icons/cobblestone-icon';
+import { ClayIcon } from './icons/clay-icon';
 
 export interface TimelineProjectProps {
   name: string;
   url?: string;
   description: string;
-  organization: 'personal' | 'workos' | 'qualtrics' | 'nd' | 'cobblestone';
+  organization:
+    | 'personal'
+    | 'workos'
+    | 'qualtrics'
+    | 'nd'
+    | 'cobblestone'
+    | 'clay';
   secondaryDescription?: string;
   isRight: boolean;
   isFirst: boolean;
@@ -81,6 +88,8 @@ export const TimelineProject: FC<Readonly<TimelineProjectProps>> = ({
                   return <DaneIcon className="h-6 w-6" />;
                 case 'cobblestone':
                   return <CobblestoneIcon className="h-6 w-6" />;
+                case 'clay':
+                  return <ClayIcon className="h-6 w-6" />;
                 default:
                   return unreachable(organization);
               }
