@@ -12,7 +12,13 @@ export interface TimelineProjectProps {
   name: string;
   url?: string;
   description: string;
-  organization: 'personal' | 'workos' | 'qualtrics' | 'nd' | 'cobblestone' | 'clay';
+  organization:
+    | 'personal'
+    | 'workos'
+    | 'qualtrics'
+    | 'nd'
+    | 'cobblestone'
+    | 'clay';
   secondaryDescription?: string;
   isRight: boolean;
   isFirst: boolean;
