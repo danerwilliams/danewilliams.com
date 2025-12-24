@@ -93,7 +93,7 @@ export async function getStaticProps() {
     {
       company: 'Clay',
       logo: 'clay',
-      title: 'Engineering',
+      title: 'Product and Engineering',
       link: 'https://clay.com',
       location: 'New York, NY',
       startDate: new Date(2025, 5).toISOString(),
@@ -101,7 +101,7 @@ export async function getStaticProps() {
     {
       company: 'Cobblestone',
       logo: 'cobblestone',
-      title: 'Engineering',
+      title: 'Product and Engineering',
       link: 'https://getcobblestone.com',
       location: 'New York, NY',
       startDate: new Date(2024, 0).toISOString(),
@@ -110,7 +110,7 @@ export async function getStaticProps() {
     {
       company: 'WorkOS',
       logo: 'workos',
-      title: 'Engineering',
+      title: 'Product and Engineering',
       link: 'https://workos.com',
       location: 'New York, NY',
       startDate: new Date(2022, 0).toISOString(),
