@@ -5,6 +5,13 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'Clay in Claude',
+    url: 'https://www.clay.com/blog/clay-in-claude',
+    date: new Date('2026-01-26').toISOString(),
+    organization: 'clay',
+    description: 'One of the first commercial implementations of the MCP Apps protocol.',
+  },
+  {
     name: 'Clay in ChatGPT',
     url: 'https://www.linkedin.com/posts/grow-with-clay_big-news-clay-is-now-available-directly-activity-7407182915740147712-IPWr',
     date: new Date('2025-12-17').toISOString(),
