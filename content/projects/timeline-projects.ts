@@ -9,7 +9,8 @@ export const TimelineProjects: (Omit<
     url: 'https://www.clay.com/blog/clay-in-claude',
     date: new Date('2026-01-26').toISOString(),
     organization: 'clay',
-    description: 'One of the first commercial implementations of the MCP Apps protocol.',
+    description:
+      'One of the first commercial implementations of the MCP Apps protocol.',
   },
   {
     name: 'Clay in ChatGPT',
