@@ -6,8 +6,8 @@ This is a Next.js 15 personal portfolio/blog site (Pages Router). No database, n
 
 ### Services
 
-| Service | Command | Port | Notes |
-|---------|---------|------|-------|
+| Service    | Command       | Port | Notes               |
+| ---------- | ------------- | ---- | ------------------- |
 | Dev server | `npm run dev` | 3000 | Only service needed |
 
 ### Key commands
