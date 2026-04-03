@@ -1,6 +1,6 @@
 # AGENTS.md
 
-## Cursor Cloud specific instructions
+## Development environment
 
 This is a Next.js 15 personal portfolio/blog site (Pages Router). No database, no Docker, no environment variables required.
 
