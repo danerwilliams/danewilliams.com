@@ -101,6 +101,7 @@ export async function getStaticProps() {
     {
       company: 'Andreessen Horowitz',
       logo: 'a16z',
+      title: 'investing',
       link: 'https://a16z.com',
       startDate: new Date(2026, 1).toISOString(),
     },
