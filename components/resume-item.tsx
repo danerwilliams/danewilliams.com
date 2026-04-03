@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { FC } from 'react';
 import { AttIcon } from './icons/att-icon';
 import { QualtricsIcon } from './icons/qualtrics-icon';
