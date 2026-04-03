@@ -99,6 +99,12 @@ export async function getStaticProps() {
       startDate: new Date(2025, 5).toISOString(),
     },
     {
+      company: 'Andreessen Horowitz',
+      logo: 'a16z',
+      link: 'https://a16z.com',
+      startDate: new Date(2026, 1).toISOString(),
+    },
+    {
       company: 'Cobblestone',
       logo: 'cobblestone',
       title: 'Product and Engineering',
