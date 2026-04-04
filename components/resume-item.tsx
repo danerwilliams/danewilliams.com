@@ -33,10 +33,7 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
   startDate,
   endDate,
 }) => {
-  const logoSizeClass =
-    logo === 'a16z'
-      ? 'h-14 w-24 md:h-16 md:w-28 lg:h-20 lg:w-36'
-      : 'h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20';
+  const logoSizeClass = 'h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20';
   const formattedStartDate = new Date(startDate).toLocaleString('en-US', {
     year: 'numeric',
     month: 'long',
