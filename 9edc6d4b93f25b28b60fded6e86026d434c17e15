@@ -1,0 +1,26 @@
+pages/about.tsx
+  9c77a61d7eb29159 103
+components/resume-item.tsx
+  9c77a61d7eb29159 33-53,55-69,74-79,81-82,84-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "9edc6d4b93f25b28b60fded6e86026d434c17e15",
+  "prompts": {
+    "9c77a61d7eb29159": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6e86075a-76f4-4f4a-8d05-de6f80b93565",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dane Williams",
+      "messages": [],
+      "total_additions": 65,
+      "total_deletions": 86,
+      "accepted_lines": 47,
+      "overriden_lines": 1,
+      "messages_url": "https://usegitai.com/cas/523b9f8cc8c78bad8f61a3b6bf26e88c9616680c114c25958b83e768acfb152d"
+    }
+  }
+}
