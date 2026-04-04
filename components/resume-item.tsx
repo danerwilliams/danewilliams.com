@@ -1,17 +1,24 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import { AttIcon } from './icons/att-icon';
 import { QualtricsIcon } from './icons/qualtrics-icon';
 import { SymetraIcon } from './icons/symetra-icon';
 import { WorkosIcon } from './icons/workos-icon';
 import { CobblestoneIcon } from './icons/cobblestone-icon';
 import { ClayIcon } from './icons/clay-icon';
+import { A16zIcon } from './icons/a16z-icon';
 
 export interface ResumeItemProps {
   company: string;
-  logo: 'workos' | 'qualtrics' | 'att' | 'symetra' | 'cobblestone' | 'clay';
+  logo:
+    | 'workos'
+    | 'qualtrics'
+    | 'att'
+    | 'symetra'
+    | 'cobblestone'
+    | 'clay'
+    | 'a16z';
   title: string;
   link: string;
-  location: string;
   startDate: string;
   endDate?: string | undefined;
 }
@@ -21,7 +28,6 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
   logo,
   title,
   link,
-  location,
   startDate,
   endDate,
 }) => (
@@ -41,6 +47,8 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
             return <CobblestoneIcon />;
           case 'clay':
             return <ClayIcon />;
+          case 'a16z':
+            return <A16zIcon />;
           default:
             return null;
         }
@@ -59,9 +67,7 @@ export const ResumeItem: FC<Readonly<ResumeItemProps>> = ({
         </a>
         {` • ${title}`}
       </div>
-      <div className="mt-1">{`${location} • ${new Date(
-        startDate,
-      ).toLocaleString('en-US', {
+      <div className="mt-1">{`${new Date(startDate).toLocaleString('en-US', {
         year: 'numeric',
         month: 'long',
         timeZone: 'UTC',
