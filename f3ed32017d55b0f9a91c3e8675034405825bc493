@@ -1,0 +1,26 @@
+pages/about.tsx
+  9c77a61d7eb29159 103
+public/static/images/logos/a16z.svg
+  9c77a61d7eb29159 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "f3ed32017d55b0f9a91c3e8675034405825bc493",
+  "prompts": {
+    "9c77a61d7eb29159": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6e86075a-76f4-4f4a-8d05-de6f80b93565",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dane Williams",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 2,
+      "accepted_lines": 2,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/de5b2772d5fa54a2307ee0b9b7933156240142e8b3074cd40e01d93c1395af98"
+    }
+  }
+}
