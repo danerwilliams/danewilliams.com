@@ -1,0 +1,24 @@
+components/resume-item.tsx
+  9c77a61d7eb29159 36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "92b8b3365e270d5c802f3df07e1d547fa99eea15",
+  "prompts": {
+    "9c77a61d7eb29159": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6e86075a-76f4-4f4a-8d05-de6f80b93565",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dane Williams",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 4,
+      "accepted_lines": 1,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/d9d1b8af28fca094384360c1a2225f68b242b7f70e9ec56e78bc2b2de9fa0d4c"
+    }
+  }
+}
