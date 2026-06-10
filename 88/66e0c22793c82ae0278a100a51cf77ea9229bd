@@ -1,0 +1,20 @@
+content/journal/cobblestone-retrospective.md
+  s_b5b7cab6b46c63::t_4f17c69e7ab4cc 8
+  s_b5b7cab6b46c63::t_75328077f0b1e7 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "8866e0c22793c82ae0278a100a51cf77ea9229bd",
+  "prompts": {},
+  "sessions": {
+    "s_b5b7cab6b46c63": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d256461a-8b2f-4ae8-a027-25f1299d4d93",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Dane Williams <dane_williams@outlook.com>"
+    }
+  }
+}
