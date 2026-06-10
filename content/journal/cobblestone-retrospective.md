@@ -4,6 +4,8 @@ description: 'Several weeks ago, Cobblestone began the process of shutting down.
 date: '2025-06-20'
 ---
 
+_Update (06/09/2026): After being dormant for about a year, Cobblestone was [acquired by 100](https://www.prnewswire.com/news-releases/100-named-preferred-partner-by-multiple-nmhc-top-50s-and-acquires-cobblestone-302794263.html) and our work lives on :-)_
+
 Several weeks ago, Cobblestone began the process of shutting down.
 I am beyond grateful to [Jack](https://www.linkedin.com/in/jack-mastrangelo/), [Jason](https://www.linkedin.com/in/jasonscharff/), colleagues, investors, customers, friends, and everyone else who helped make the past year and a half possible.
 
