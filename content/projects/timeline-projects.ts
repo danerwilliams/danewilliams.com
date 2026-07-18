@@ -5,6 +5,22 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
+    name: 'Clay CLI, API, and Agent Plugin',
+    url: 'https://youtu.be/NxIUkh60CcU',
+    date: new Date('2026-07-14').toISOString(),
+    organization: 'clay',
+    description:
+      'Programmatic access to Clay from the terminal, coding agents, and your own services.',
+  },
+  {
+    name: 'MCP for Sales Reps',
+    url: 'https://www.clay.com/blog/mcp-for-reps',
+    date: new Date('2026-07-09').toISOString(),
+    organization: 'clay',
+    description:
+      'Prospect with Clay data and workflows in AI tools like ChatGPT and Claude.',
+  },
+  {
     name: 'Clay in Claude',
     url: 'https://www.clay.com/blog/clay-in-claude',
     date: new Date('2026-01-26').toISOString(),
