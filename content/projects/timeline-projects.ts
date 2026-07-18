@@ -5,7 +5,7 @@ export const TimelineProjects: (Omit<
   'isRight' | 'isFirst' | 'isLast' | 'newYear'
 > & { date: string })[] = [
   {
-    name: 'Clay CLI & API',
+    name: 'Clay CLI, API, and Agent Plugin',
     url: 'https://youtu.be/NxIUkh60CcU',
     date: new Date('2026-07-14').toISOString(),
     organization: 'clay',
