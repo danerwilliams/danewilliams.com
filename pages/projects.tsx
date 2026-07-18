@@ -12,6 +12,7 @@ import { TimelineProjectProps } from '../components/timeline-project';
 import { TimelineProjects } from '../content/projects';
 import { getRoundedNumber } from '../lib/get-rounded-number';
 import { getGithubStars } from '../lib/get-github-stars';
+import { getGithubForks } from '../lib/get-github-forks';
 import { getGithubContributorsCount } from '../lib/get-github-contributors-count';
 
 interface ProjectsProps {
@@ -51,7 +52,7 @@ const Projects: NextPage<ProjectsProps> = ({
         <PageHeader question="What have I built?" />
         <div className="mt-8">
           <p>{description}</p>
-          <div className="flex flex-row max-[576px]:flex-col gap-6 mt-8">
+          <div className="grid grid-cols-2 max-[576px]:grid-cols-1 gap-6 mt-8">
             {highlightedProjects.map((project) => (
               <div className="flex w-full" key={project.name}>
                 <HighlightedProject {...project} />
@@ -84,6 +85,26 @@ export async function getStaticProps() {
   const draculaTmuxContributorsCount = await getGithubContributorsCount({
     owner: 'dracula',
     repo: 'tmux',
+  });
+
+  const charcoalStars = await getGithubStars({
+    owner: 'danerwilliams',
+    repo: 'charcoal',
+  });
+
+  const charcoalForks = await getGithubForks({
+    owner: 'danerwilliams',
+    repo: 'charcoal',
+  });
+
+  const agentPluginsStars = await getGithubStars({
+    owner: 'clay-run',
+    repo: 'agent-plugins',
+  });
+
+  const agentPluginsForks = await getGithubForks({
+    owner: 'clay-run',
+    repo: 'agent-plugins',
   });
 
   return {
@@ -127,6 +148,36 @@ export async function getStaticProps() {
               label: `${getRoundedNumber(
                 draculaTmuxContributorsCount,
               )} Contributors`,
+            },
+          ],
+        },
+        {
+          name: 'Charcoal',
+          url: 'https://github.com/danerwilliams/charcoal',
+          description: 'A CLI for stacking pull requests, forked from Graphite',
+          stats: [
+            {
+              icon: 'star',
+              label: `${getRoundedNumber(charcoalStars)} Stars`,
+            },
+            {
+              icon: 'fork',
+              label: `${getRoundedNumber(charcoalForks)} Forks`,
+            },
+          ],
+        },
+        {
+          name: 'Clay Agent Plugins',
+          url: 'https://github.com/clay-run/agent-plugins',
+          description: "Clay's official plugins for coding agents",
+          stats: [
+            {
+              icon: 'star',
+              label: `${getRoundedNumber(agentPluginsStars)} Stars`,
+            },
+            {
+              icon: 'fork',
+              label: `${getRoundedNumber(agentPluginsForks)} Forks`,
             },
           ],
         },

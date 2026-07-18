@@ -1,8 +1,9 @@
 import { FC, ReactNode } from 'react';
 import { unreachable } from '../lib/unreachable';
 import { EyeOpenIcon, PersonIcon, StarIcon } from '@radix-ui/react-icons';
+import { GitForkIcon } from './icons/git-fork-icon';
 
-type HighlightedProjectIcon = 'star' | 'eye' | 'person';
+type HighlightedProjectIcon = 'star' | 'eye' | 'person' | 'fork';
 
 interface Stat {
   icon: HighlightedProjectIcon;
@@ -61,6 +62,8 @@ const getIcon = (name: HighlightedProjectIcon) => {
       return <EyeOpenIcon />;
     case 'person':
       return <PersonIcon />;
+    case 'fork':
+      return <GitForkIcon />;
     default:
       return unreachable(name);
   }
