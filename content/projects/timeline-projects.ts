@@ -177,6 +177,15 @@ export const TimelineProjects: (Omit<
       'A 4 stage compiler consisting of a scanner, parser, pretty printer, and type checker for the B Minor programming language written with C, Flex, and Bison.',
   },
   {
+    name: 'New Grad Positions',
+    organization: 'personal',
+    url: 'https://github.com/SimplifyJobs/New-Grad-Positions',
+    date: new Date('2020-05-24').toISOString(),
+    description:
+      'A collection of full time software engineering, quant, and product management roles for new college graduates.',
+    secondaryDescription: 'Now maintained by the team at Simplify.',
+  },
+  {
     name: 'Pork Chop',
     organization: 'personal',
     url: 'https://github.com/danerwilliams/pork-chop',
@@ -191,5 +200,12 @@ export const TimelineProjects: (Omit<
     date: new Date('2020-04-01').toISOString(),
     description:
       'My original personal website built using Hugo along with customizations using vanilla Javascript and CSS.',
+  },
+  {
+    name: 'Dracula Tmux',
+    organization: 'personal',
+    url: 'https://github.com/dracula/tmux',
+    date: new Date('2020-03-14').toISOString(),
+    description: 'Official Dracula Theme extension for Tmux.',
   },
 ];
