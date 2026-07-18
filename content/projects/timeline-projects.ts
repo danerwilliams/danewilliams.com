@@ -182,7 +182,9 @@ export const TimelineProjects: (Omit<
     url: 'https://github.com/SimplifyJobs/New-Grad-Positions',
     date: new Date('2020-05-24').toISOString(),
     description:
-      'A collection of computer science jobs for new college graduates.',
+      'A collection of full time software engineering, quant, and product management roles for new college graduates.',
+    secondaryDescription:
+      'Now maintained by the team at Simplify with over 17k stars on GitHub.',
   },
   {
     name: 'Pork Chop',
@@ -206,5 +208,7 @@ export const TimelineProjects: (Omit<
     url: 'https://github.com/dracula/tmux',
     date: new Date('2020-03-14').toISOString(),
     description: 'Official Dracula Theme extension for Tmux.',
+    secondaryDescription:
+      'Grew into one of the most popular Tmux status bar themes, now maintained by over 100 contributors.',
   },
 ];
