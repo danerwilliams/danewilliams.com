@@ -1,0 +1,20 @@
+content/projects/timeline-projects.ts
+  s_41ee69027a776d::t_f38f966f2521b6 180-186
+  s_41ee69027a776d::t_5cd76f0ab49946 179,203-209
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "9989ebaebc6311c0844dacac3fb0ed47e04e2eb7",
+  "prompts": {},
+  "sessions": {
+    "s_41ee69027a776d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0e1cb659-6e93-45a8-884d-3947bd3d455a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Dane Williams <dane_williams@outlook.com>"
+    }
+  }
+}
