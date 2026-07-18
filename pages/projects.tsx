@@ -119,18 +119,17 @@ export async function getStaticProps() {
         'I’ve worked on many projects on my own time and for work. Some of these projects are still active and others I no longer work on. This list is not exhaustive.',
       highlightedProjects: [
         {
-          name: 'New Grad Positions',
-          url: 'https://github.com/SimplifyJobs/New-Grad-Positions',
-          description:
-            'A collection of computer science jobs for new college graduates',
+          name: 'Clay Agent Plugins',
+          url: 'https://github.com/clay-run/agent-plugins',
+          description: "Clay's official plugins for coding agents",
           stats: [
             {
               icon: 'star',
-              label: `${getRoundedNumber(newGradPositionsStars)} Stars`,
+              label: `${getRoundedNumber(agentPluginsStars)} Stars`,
             },
             {
-              icon: 'eye',
-              label: '10k+ Visits/Day',
+              icon: 'fork',
+              label: `${getRoundedNumber(agentPluginsForks)} Forks`,
             },
           ],
         },
@@ -152,6 +151,22 @@ export async function getStaticProps() {
           ],
         },
         {
+          name: 'New Grad Positions',
+          url: 'https://github.com/SimplifyJobs/New-Grad-Positions',
+          description:
+            'A collection of computer science jobs for new college graduates',
+          stats: [
+            {
+              icon: 'star',
+              label: `${getRoundedNumber(newGradPositionsStars)} Stars`,
+            },
+            {
+              icon: 'eye',
+              label: '10k+ Visits/Day',
+            },
+          ],
+        },
+        {
           name: 'Charcoal',
           url: 'https://github.com/danerwilliams/charcoal',
           description: 'A CLI for stacking pull requests, forked from Graphite',
@@ -163,21 +178,6 @@ export async function getStaticProps() {
             {
               icon: 'fork',
               label: `${getRoundedNumber(charcoalForks)} Forks`,
-            },
-          ],
-        },
-        {
-          name: 'Clay Agent Plugins',
-          url: 'https://github.com/clay-run/agent-plugins',
-          description: "Clay's official plugins for coding agents",
-          stats: [
-            {
-              icon: 'star',
-              label: `${getRoundedNumber(agentPluginsStars)} Stars`,
-            },
-            {
-              icon: 'fork',
-              label: `${getRoundedNumber(agentPluginsForks)} Forks`,
             },
           ],
         },
