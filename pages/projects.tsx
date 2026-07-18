@@ -119,9 +119,9 @@ export async function getStaticProps() {
         'I’ve worked on many projects on my own time and for work. Some of these projects are still active and others I no longer work on. This list is not exhaustive.',
       highlightedProjects: [
         {
-          name: 'Clay Agent Plugins',
+          name: 'Clay Agent Plugin',
           url: 'https://github.com/clay-run/agent-plugins',
-          description: "Clay's official plugins for coding agents",
+          description: "Clay's official plugin for coding agents",
           stats: [
             {
               icon: 'star',
