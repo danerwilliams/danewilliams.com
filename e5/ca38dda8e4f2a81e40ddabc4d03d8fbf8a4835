@@ -1,0 +1,31 @@
+components/icons/git-fork-icon.tsx
+  s_41ee69027a776d::t_4011f4715a4ca3 1-24
+lib/get-github-forks.ts
+  s_41ee69027a776d::t_5865b921625964 1-11
+pages/projects.tsx
+  s_41ee69027a776d::t_3b1d82a05c283d 90-109
+  s_41ee69027a776d::t_e84fd88a21ded1 154-183
+  s_41ee69027a776d::t_ab8dce2f0bd04a 15
+  s_41ee69027a776d::t_6c82623144637f 55
+content/projects/timeline-projects.ts
+  s_41ee69027a776d::t_70090862d90d58 31
+components/highlighted-project.tsx
+  s_41ee69027a776d::t_1f8ba72bf1a724 65-66
+  s_41ee69027a776d::t_93147cad75f1d1 4,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "e5ca38dda8e4f2a81e40ddabc4d03d8fbf8a4835",
+  "prompts": {},
+  "sessions": {
+    "s_41ee69027a776d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0e1cb659-6e93-45a8-884d-3947bd3d455a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Dane Williams <dane_williams@outlook.com>"
+    }
+  }
+}
